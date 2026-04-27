@@ -3,6 +3,10 @@
     {
       "economicGroup": "Grupo Agulhas Negras",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
+      "durationPeriod":{
+        "startDate": "22/02/2026",
+        "endDate": "04/12/2026"
+      },
       "public_groups": [
         {
           "groupName": "COLABORADORES",
@@ -11,48 +15,48 @@
             "totalPeople": 120,
             "answered": 95,
             "notAnswered": 25,
-            "avarageGroup": 0.05
+            "avarageGroup": 0.75
           },
           "answersGroupName": [
             {
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "d72dff11-f890-4582-8caf-3ce02d16c899",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             },
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "7b154e38-5806-4e0f-abea-0b52976ca490",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             },
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "e6b2e6d8-1b8f-4c44-a419-3e6c43342baa",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             },
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "938bb789-0b07-4a1b-9d6c-f8b973307030",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             },
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             },
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             },
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             },
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
-              "finalAverage": 0.05
+              "finalAverage": 0.75
             }
           ]
         },
@@ -63,48 +67,48 @@
             "totalPeople": 10,
             "answered": 5,
             "notAnswered": 5,
-            "avarageGroup": 0.05
+            "avarageGroup": 0.63
           },
           "answersGroupName": [
             {
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "0f75705d-a518-4ef2-b51e-ad24ae6803b7",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             },
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "90ece877-c118-4127-82a7-d36607c68339",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             },
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "5ad5408c-83f9-40c6-a8b0-e63a6f4b54a4",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             },
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "2ede73c8-09f2-4b03-af5d-481f21a16e20",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             },
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             },
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             },
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             },
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
-              "finalAverage": 0.05
+              "finalAverage": 0.63
             }
           ]
         },
@@ -115,48 +119,48 @@
             "totalPeople": 33,
             "answered": 5,
             "notAnswered": 28,
-            "avarageGroup": 0.05
+            "avarageGroup": 0.5752
           },
           "answersGroupName": [
             {
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "7023fd98-6ba4-4402-90b2-0ce816133ce1",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             },
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "9d7d7484-0d52-4e3f-afe0-0007ec95ab17",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             },
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "6db3c56b-7adf-444a-b378-f53270f059bc",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             },
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "53cb25f9-8408-420b-8aa9-3b15fbd778d1",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             },
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             },
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             },
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             },
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
-              "finalAverage": 0.05
+              "finalAverage": 0.5752
             }
           ]
         },
@@ -167,48 +171,48 @@
             "totalPeople": 93,
             "answered": 29,
             "notAnswered": 64,
-            "avarageGroup": 0.05
+            "avarageGroup": 0.21458
           },
           "answersGroupName": [
             {
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "445bbc38-df30-449e-af8c-dde99de05d55",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             },
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "6a3bc356-63f1-42c9-b872-b93ab034c336",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             },
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "e7ff994f-7289-4d0e-971c-3ae83a37d06e",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             },
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "ec34fd4f-2559-4a6a-8394-5ba58e46b0c2",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             },
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             },
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             },
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             },
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
-              "finalAverage": 0.05
+              "finalAverage": 0.21458
             }
           ]
         },

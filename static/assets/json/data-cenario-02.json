@@ -1,8 +1,12 @@
 {
   "reportData": [
     {
-      "economicGroup": "Grupo Agulhas Negras",
+      "economicGroup": "Grupo Toriba",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
+      "durationPeriod":{
+        "startDate": "14/04/2026",
+        "endDate": "27/06/2026"
+      },
       "public_groups": [
         {
           "groupName": "COLABORADORES",

@@ -3,9 +3,13 @@
     {
       "economicGroup": "Grupo Agulhas Negras",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
+      "durationPeriod":{
+        "startDate": "25/02/2026",
+        "endDate": "07/11/2026"
+      },
       "public_groups": [
         {
-          "groupName": "OPERACIONAL",
+          "groupName": "DEPARTAMENTO OPERACIONAL",
           "peopleGroup": {
             "groupId": "caf05787-abad-4bd3-b6f8-a9fcb8ccf823",
             "totalPeople": 10,

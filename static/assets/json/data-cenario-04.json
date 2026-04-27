@@ -3,6 +3,10 @@
     {
       "economicGroup": "Grupo Agulhas Negras",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
+      "durationPeriod":{
+        "startDate": "09/01/2026",
+        "endDate": "28/06/2026"
+      },
       "public_groups": [
         {
           "groupName": "MECÂNICA",
