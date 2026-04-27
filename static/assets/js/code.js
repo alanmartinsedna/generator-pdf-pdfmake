@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const response = await fetch(`/static/assets/json/${dataCenario}`);
             const dataJsonCenario = await response.json();
 
-            console.log("IMPRIMINDO JSON =", dataJsonCenario);
+            // console.log("IMPRIMINDO JSON =", dataJsonCenario);
 
-            generateFilePdf(dataCenario)
+            generateFilePdf(dataJsonCenario)
 
         } catch (error) {
             console.error("Erro ao carregar JSON:", error);
