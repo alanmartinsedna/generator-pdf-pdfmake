@@ -1,3 +1,5 @@
+import { getNameEvaluationDiagnostic } from "./components/get-name-eval-diag.js";
+
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
 
@@ -10,8 +12,6 @@ export function generateFilePdf(dataJson) {
     let minute = String(currentTime.getMinutes()).padStart(2, '0');
     let seconds = String(currentTime.getSeconds()).padStart(2, '0');
     let formatedReference = `${day}${month}${year}${hours}${minute}${seconds}` 
-
-    // console.log('RETORNO JSON = ', dataJson)
 
     const currentUrlPage = window.location.pathname;
     const moduleDiagnostic = '/diagnostico/';
@@ -66,6 +66,8 @@ export function generateFilePdf(dataJson) {
         return;
     }
 
+    const evaluationName = getNameEvaluationDiagnostic(dataJson);
+
     const docDefinition = {
         // a string or { width: number, height: number }
         pageSize: 'A4',
@@ -73,7 +75,22 @@ export function generateFilePdf(dataJson) {
         pageOrientation: 'portrait',
         // [left, top, right, bottom] or [horizontal, vertical] or just a number for equal margins
         pageMargins: [20, 20, 20, 20],
-        content: ['lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'],
+        content: [
+            {
+                text: `${evaluationName}`,
+                style: 'header-title',
+            },
+            'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+
+        ],
+        styles: {
+            'header-title': {
+                fontSize: 20,
+                bold: true,
+                margin: [0, 0, 0, 10], // [left, top, right, bottom],
+                color: '#596CFF'
+            },
+        }
     };
 
     pdfMake.createPdf(docDefinition).download(`Relatório ${formatedReference}.pdf`);
