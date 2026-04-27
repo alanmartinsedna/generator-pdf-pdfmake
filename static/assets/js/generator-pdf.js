@@ -144,52 +144,40 @@ export function generateFilePdf(dataJson) {
                 style: 'header-sub-title'
             }
         );
-    } else {
-        console.error('Módulo não reconhecido para adicionar título e subtítulo');
-    }
 
-    if (currentUrlPage.includes(moduleDiagnostic)) {
+        if (currentUrlPage.includes(moduleDiagnostic)) {
             console.log('Módulo de diagnóstico detectado');
-        if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ADERENCE)) {
-            console.log('Página de aderência e participação detectada');
+            if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ADERENCE)) {
+                console.log('Página de aderência e participação detectada');
 
-        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS)) {
-            console.log('Página de respostas detectada');
+            } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS)) {
+                console.log('Página de respostas detectada');
 
-        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS)) {
-            console.log('Página de recomendações detectada');
+            } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS)) {
+                console.log('Página de recomendações detectada');
 
-        } else {
-            console.log('Página de diagnóstico não reconhecida para impressão');
-            alert('Esta página de diagnóstico não é compatível com a impressão. Por favor, navegue para uma página de aderência, respostas ou recomendações para imprimir.');
-            return;
+            }
+
+        } else if (currentUrlPage.includes(moduleEvaluation)) {
+            console.log('Módulo de avaliação detectado');
+        
+            if (currentUrlPage.includes(ROUTES.EVALUATION.ADERENCE)) {
+                console.log('Página de aderência e participação detectada');
+
+            } else if (currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
+                console.log('Página de respostas detectada');
+
+            } else if (currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
+                console.log('Página de recomendações detectada');
+
+            }
         }
 
-    } else if (currentUrlPage.includes(moduleEvaluation)) {
-        console.log('Módulo de avaliação detectado');
-    
-        if (currentUrlPage.includes(ROUTES.EVALUATION.ADERENCE)) {
-            console.log('Página de aderência e participação detectada');
-
-        } else if (currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
-            console.log('Página de respostas detectada');
-
-        } else if (currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
-            console.log('Página de recomendações detectada');
-
-        } else {
-            console.log('Página de avaliação não reconhecida para impressão');
-            alert('Esta página de avaliação não é compatível com a impressão. Por favor, navegue para uma página de aderência, respostas ou recomendações para imprimir.');
-            return;
-        }
+        pdfMake.createPdf(docDefinition).download(`Relatório ${formatedReference}.pdf`);
 
     } else {
-        console.log('Módulo não reconhecido para impressão');
-        alert('Esta página não é compatível com a impressão. Por favor, navegue para uma página de diagnóstico ou avaliação para imprimir.');
-        return;
+        alert('Módulo não reconhecido. Por favor, navegue para uma página de diagnóstico ou avaliação para imprimir.');
     }
-
-    pdfMake.createPdf(docDefinition).download(`Relatório ${formatedReference}.pdf`);
 
     console.log("[GENERATOR-PDF.JS] Fim do script");
-}
+};
