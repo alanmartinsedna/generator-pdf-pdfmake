@@ -1,5 +1,5 @@
 export function getNameEconomicGroup(data) {
     let economicGroupName = data.reportData[0].economicGroup;
-    economicGroupName = economicGroupName != '' ? economicGroupName : 'Grupo Economico não localizado';
+    economicGroupName = economicGroupName != '' ? economicGroupName : 'Grupo Econômico';
     return economicGroupName;
 }
