@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+    <section class="w-100">
+        <div class="p-4 w-100 d-flex align-items-center" style="height: 100vh;">
+            <button id="btnGeneratePdf" class="btn btn-primary" style="margin: 0 auto;">Gerar PDF</button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- SCRIPTS BIBLIOTECA PDF MAKE -->
+    <script src="{% static 'assets/js/pdf-make/pdfmake.min.js' %}"></script>
+    <script src="{% static 'assets/js/pdf-make/vfs_fonts.js' %}"></script>
+    
+    <!-- SCRIPT GERENCIADOR DOM HTML -->
+    <script type="module" src="{% static 'assets/js/code.js' %}"></script>
+    
+</body>
+</html>
