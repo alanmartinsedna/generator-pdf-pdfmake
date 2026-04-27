@@ -30,95 +30,59 @@ export function generateFilePdf(dataJson) {
         },
     };
 
-    console.log('URL atual da página:', currentUrlPage);
-
-    if (currentUrlPage.includes(moduleDiagnostic)) {
-            console.log('Módulo de diagnóstico detectado');
-        if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ADERENCE)) {
-            console.log('Página de aderência e participação detectada');
-        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS)) {
-            console.log('Página de respostas detectada');
-        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS)) {
-            console.log('Página de recomendações detectada');
-        } else {
-            console.log('Página de diagnóstico não reconhecida para impressão');
-            alert('Esta página de diagnóstico não é compatível com a impressão. Por favor, navegue para uma página de aderência, respostas ou recomendações para imprimir.');
-            return;
-        }
-
-    } else if (currentUrlPage.includes(moduleEvaluation)) {
-        console.log('Módulo de avaliação detectado');
-    
-        if (currentUrlPage.includes(ROUTES.EVALUATION.ADERENCE)) {
-            console.log('Página de aderência e participação detectada');
-        } else if (currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
-            console.log('Página de respostas detectada');
-        } else if (currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
-            console.log('Página de recomendações detectada');
-        } else {
-            console.log('Página de avaliação não reconhecida para impressão');
-            alert('Esta página de avaliação não é compatível com a impressão. Por favor, navegue para uma página de aderência, respostas ou recomendações para imprimir.');
-            return;
-        }
-
-    } else {
-        console.log('Módulo não reconhecido para impressão');
-        alert('Esta página não é compatível com a impressão. Por favor, navegue para uma página de diagnóstico ou avaliação para imprimir.');
-        return;
-    }
-
-    const evaluationName = getNameEvaluationDiagnostic(dataJson);
-    const economicGroupName = getNameEconomicGroup(dataJson);
+    // =========================
+    // 🎯 ESTADO INICIAL
+    // =========================
 
     const docDefinition = {
-        // a string or { width: number, height: number }
         pageSize: 'A4',
-        // by default we use portrait, you can change it to landscape if you wish
         pageOrientation: 'portrait',
         // [left, top, right, bottom] or [horizontal, vertical] or just a number for equal margins
-        pageMargins: [20, 20, 20, 40],
-        content: [
-            {
-                text: `${evaluationName}`,
-                style: 'header-title',
-            },
-            {
-                text: `${economicGroupName}`,
-                style: 'header-sub-title',
-            },
-            {
-                text: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-                style: 'paragraph',
-            },
-            {
-                text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
-                style: 'paragraph',
-            }
-
-        ],
-        styles: {
-            'header-title': {
-                fontSize: 20,
-                bold: true,
-                margin: [0, 0, 0, 10], // [left, top, right, bottom],
-                color: '#596CFF'
-            },
-            'header-sub-title': {
-                fontSize: 10,
-                bold: true,
-                margin: [0, 0, 0, 10], // [left, top, right, bottom],
-                color: '#333333'
-            },
-            'paragraph': {
-                fontSize: 12,
-                margin: [0, 0, 0, 10], // [left, top, right, bottom],
-                alignment: 'justify',
-                leadingIndent: 20,
-            }
+        // 👇 IMPORTANTE: espaço suficiente pro header
+        pageMargins: [30, 50, 30, 60],
+        // =========================
+        // 🎯 HEADER FIXO
+        // =========================
+        header: function (currentPage, pageCount) {
+            return {
+                margin: [30, 20, 30, 10],
+                stack: [
+                    {
+                        columns: [
+                            {
+                                text: 'EDNA Compliance',
+                                fontSize: 12,
+                                bold: true
+                            },
+                            {
+                                text: 'Relatório diagnóstico e avaliação',
+                                alignment: 'right',
+                                fontSize: 10
+                            }
+                        ]
+                    },
+                    {
+                        canvas: [
+                            {
+                                type: 'line',
+                                x1: 0,
+                                y1: 5,
+                                x2: 535,
+                                y2: 5,
+                                lineWidth: 1,
+                                lineColor: '#cccccc'
+                            }
+                        ]
+                    }
+                ]
+            };
         },
+        // =========================
+        // 📄 FOOTER COM PAGINAÇÃO
+        // =========================
         footer: function (currentPage, pageCount) {
             return {
-                margin: [20, 10, 20, 20],
+                margin: [30, 10, 30, 20],
                 columns: [
                     {
                         text: `Gerado em: ${currentTime.toLocaleString()}`,
@@ -133,10 +97,99 @@ export function generateFilePdf(dataJson) {
                 ]
             };
         },
+        // ===========================
+        // 📦 CONTEÚDO PARA GERAR PDF
+        // ===========================
+        content: [],
+        
+        // =========================
+        // 🎨 ESTILOS
+        // =========================
+        styles: {
+            'header-title': {
+                fontSize: 20,
+                bold: true,
+                margin: [0, 0, 0, 10],
+                color: '#596CFF'
+            },
+            'header-sub-title': {
+                fontSize: 10,
+                bold: true,
+                margin: [0, 0, 0, 10],
+                color: '#333333'
+            },
+            'paragraph': {
+                fontSize: 12,
+                margin: [0, 0, 0, 10],
+                alignment: 'justify',
+                leadingIndent: 20,
+                lineHeight: 1.3
+            }
+        }
     };
+
+    console.log('URL atual da página:', currentUrlPage);
+
+    const evaluationName = getNameEvaluationDiagnostic(dataJson);
+    const economicGroupName = getNameEconomicGroup(dataJson);
+
+    if(currentUrlPage.includes(moduleDiagnostic) || currentUrlPage.includes(moduleEvaluation)) {
+        docDefinition.content.push(
+            {
+                text: evaluationName,
+                style: 'header-title'
+            },
+            {
+                text: economicGroupName,
+                style: 'header-sub-title'
+            }
+        );
+    } else {
+        console.error('Módulo não reconhecido para adicionar título e subtítulo');
+    }
+
+    if (currentUrlPage.includes(moduleDiagnostic)) {
+            console.log('Módulo de diagnóstico detectado');
+        if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ADERENCE)) {
+            console.log('Página de aderência e participação detectada');
+
+        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS)) {
+            console.log('Página de respostas detectada');
+
+        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS)) {
+            console.log('Página de recomendações detectada');
+
+        } else {
+            console.log('Página de diagnóstico não reconhecida para impressão');
+            alert('Esta página de diagnóstico não é compatível com a impressão. Por favor, navegue para uma página de aderência, respostas ou recomendações para imprimir.');
+            return;
+        }
+
+    } else if (currentUrlPage.includes(moduleEvaluation)) {
+        console.log('Módulo de avaliação detectado');
+    
+        if (currentUrlPage.includes(ROUTES.EVALUATION.ADERENCE)) {
+            console.log('Página de aderência e participação detectada');
+
+        } else if (currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
+            console.log('Página de respostas detectada');
+
+        } else if (currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
+            console.log('Página de recomendações detectada');
+
+        } else {
+            console.log('Página de avaliação não reconhecida para impressão');
+            alert('Esta página de avaliação não é compatível com a impressão. Por favor, navegue para uma página de aderência, respostas ou recomendações para imprimir.');
+            return;
+        }
+
+    } else {
+        console.log('Módulo não reconhecido para impressão');
+        alert('Esta página não é compatível com a impressão. Por favor, navegue para uma página de diagnóstico ou avaliação para imprimir.');
+        return;
+    }
 
     pdfMake.createPdf(docDefinition).download(`Relatório ${formatedReference}.pdf`);
 
     console.log("[GENERATOR-PDF.JS] Fim do script");
 }
-
