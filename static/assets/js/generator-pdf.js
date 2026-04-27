@@ -1,4 +1,5 @@
 import { getNameEvaluationDiagnostic } from "./components/get-name-eval-diag.js";
+import { getNameEconomicGroup } from "./components/get-name-economic-group.js";
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -67,6 +68,7 @@ export function generateFilePdf(dataJson) {
     }
 
     const evaluationName = getNameEvaluationDiagnostic(dataJson);
+    const economicGroupName = getNameEconomicGroup(dataJson);
 
     const docDefinition = {
         // a string or { width: number, height: number }
@@ -80,6 +82,10 @@ export function generateFilePdf(dataJson) {
                 text: `${evaluationName}`,
                 style: 'header-title',
             },
+            {
+                text: `${economicGroupName}`,
+                style: 'header-sub-title',
+            },
             'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
         ],
@@ -89,6 +95,12 @@ export function generateFilePdf(dataJson) {
                 bold: true,
                 margin: [0, 0, 0, 10], // [left, top, right, bottom],
                 color: '#596CFF'
+            },
+            'header-sub-title': {
+                fontSize: 10,
+                bold: true,
+                margin: [0, 0, 0, 10], // [left, top, right, bottom],
+                color: '#333333'
             },
         }
     };
