@@ -1,7 +1,8 @@
 {
   "reportData": [
     {
-      "economicGroup": "Grupo Agulhas Negras",
+      "methodName": "Avaliação de Maturidade do Programa de Privacidade - Guterres",
+      "economicGroup": "Guterres Comercio de Combustiveis",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
       "durationPeriod":{
         "startDate": "22/02/2026",
