@@ -15,13 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     btnGeneratePdf.addEventListener('click', async (event) => {
         event.preventDefault();
 
-        console.log("Botão gerar pdf clicado");
-
         try {
             const response = await fetch(`/static/assets/json/${dataCenario}`);
             const dataJsonCenario = await response.json();
-
-            // console.log("IMPRIMINDO JSON =", dataJsonCenario);
 
             generateFilePdf(dataJsonCenario)
 
@@ -29,8 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Erro ao carregar JSON:", error);
         }
     });
-
-    
 
     console.log("[CODE.JS] Fim do script");
 });
