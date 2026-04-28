@@ -1,5 +1,7 @@
 import { getNameEvaluationDiagnostic } from "./components/get-name-eval-diag.js";
 import { getNameEconomicGroup } from "./components/get-name-economic-group.js";
+import { generateBadge } from "./components/generate-badge.js";
+import { getPeriodTimeEvaluationDiagnostic } from "./components/get-period-eval-diag.js";
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -134,6 +136,7 @@ export function generateFilePdf(dataJson) {
     const economicGroupName = getNameEconomicGroup(dataJson);
 
     if(currentUrlPage.includes(moduleDiagnostic) || currentUrlPage.includes(moduleEvaluation)) {
+        // Adiciona o título, subtítulo
         docDefinition.content.push(
             {
                 text: evaluationName,
@@ -144,6 +147,9 @@ export function generateFilePdf(dataJson) {
                 style: 'header-sub-title'
             }
         );
+
+        // Adiciona badge do period
+        docDefinition.content.push(generateBadge(getPeriodTimeEvaluationDiagnostic(dataJson), 'left'));
 
         if (currentUrlPage.includes(moduleDiagnostic)) {
             console.log('Módulo de diagnóstico detectado');
