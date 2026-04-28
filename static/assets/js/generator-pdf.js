@@ -36,18 +36,24 @@ export function generateFilePdf(dataJson) {
     // 🎯 ESTADO INICIAL
     // =========================
 
+    const PAGE_MARGIM_TOP = 50; // margem superior para evitar sobreposição com o header
+    const PAGE_MARGIM_BOTTOM = 60; // margem inferior para evitar sobreposição com o footer
+    const PAGE_MARGIM_LEFT = 30; // margem esquerda para evitar sobreposição com o header
+    const PAGE_MARGIM_RIGHT = 30; // margem direita para evitar sobreposição com o header
+
     const docDefinition = {
         pageSize: 'A4',
         pageOrientation: 'portrait',
         // [left, top, right, bottom] or [horizontal, vertical] or just a number for equal margins
         // 👇 IMPORTANTE: espaço suficiente pro header
-        pageMargins: [30, 50, 30, 60],
+        pageMargins: [PAGE_MARGIM_LEFT, PAGE_MARGIM_TOP, PAGE_MARGIM_RIGHT, PAGE_MARGIM_BOTTOM],
         // =========================
         // 🎯 HEADER FIXO
         // =========================
-        header: function (currentPage, pageCount) {
+        header: function (currentPage, pageCount, pageSize) {
+            const lineLengthUtil = pageSize.width - PAGE_MARGIM_LEFT - PAGE_MARGIM_RIGHT;
             return {
-                margin: [30, 20, 30, 10],
+                margin: [PAGE_MARGIM_LEFT, 20, PAGE_MARGIM_RIGHT, 10],
                 stack: [
                     {
                         columns: [
@@ -69,7 +75,7 @@ export function generateFilePdf(dataJson) {
                                 type: 'line',
                                 x1: 0,
                                 y1: 5,
-                                x2: 535,
+                                x2: lineLengthUtil,
                                 y2: 5,
                                 lineWidth: 1,
                                 lineColor: '#cccccc'
@@ -129,8 +135,6 @@ export function generateFilePdf(dataJson) {
             }
         }
     };
-
-    console.log('URL atual da página:', currentUrlPage);
 
     const evaluationName = getNameEvaluationDiagnostic(dataJson);
     const economicGroupName = getNameEconomicGroup(dataJson);
