@@ -2,6 +2,7 @@ import { getNameEvaluationDiagnostic } from "./components/get-name-eval-diag.js"
 import { getNameEconomicGroup } from "./components/get-name-economic-group.js";
 import { generateBadge } from "./components/generate-badge.js";
 import { getPeriodTimeEvaluationDiagnostic } from "./components/get-period-eval-diag.js";
+import { generateTopic } from "./components/topic-block.js";
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -31,6 +32,11 @@ export function generateFilePdf(dataJson) {
             RECOMMENDATIONS: '/avaliacao/recomendacoes/',
         },
     };
+    
+    let currentPageSection = '';
+    const sectionAderence = 'Aderência de participação';
+    const sectionAnswers = 'Respostas';
+    const sectionRecommendations = 'Recomendações';
 
     // =========================
     // 🎯 ESTADO INICIAL
@@ -151,37 +157,26 @@ export function generateFilePdf(dataJson) {
                 style: 'header-sub-title'
             }
         );
-
+        
         // Adiciona badge do period
         docDefinition.content.push(generateBadge(getPeriodTimeEvaluationDiagnostic(dataJson), 'left'));
-
-        if (currentUrlPage.includes(moduleDiagnostic)) {
-            console.log('Módulo de diagnóstico detectado');
-            if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ADERENCE)) {
-                console.log('Página de aderência e participação detectada');
-
-            } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS)) {
-                console.log('Página de respostas detectada');
-
-            } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS)) {
-                console.log('Página de recomendações detectada');
-
-            }
-
-        } else if (currentUrlPage.includes(moduleEvaluation)) {
-            console.log('Módulo de avaliação detectado');
+        // Espaçamento entre badge e próximo conteúdo
         
-            if (currentUrlPage.includes(ROUTES.EVALUATION.ADERENCE)) {
-                console.log('Página de aderência e participação detectada');
-
-            } else if (currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
-                console.log('Página de respostas detectada');
-
-            } else if (currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
-                console.log('Página de recomendações detectada');
-
-            }
+        if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ADERENCE) || currentUrlPage.includes(ROUTES.EVALUATION.ADERENCE)) {
+            // Página de aderência e participação detectada
+            currentPageSection = sectionAderence;
+        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS) || currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
+            // Página de respostas detectada
+            currentPageSection = sectionAnswers;
+        } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS) || currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
+            // Página de recomendações detectada
+            currentPageSection = sectionRecommendations;
         }
+
+        docDefinition.content.push(
+            generateTopic({text: `${currentPageSection}`,fontSize: 12,align: 'left',backgroundColor: '#e9ecef',color: '#596CFF',height: 30}),
+        );
+
 
         pdfMake.createPdf(docDefinition).download(`Relatório ${formatedReference}.pdf`);
 
