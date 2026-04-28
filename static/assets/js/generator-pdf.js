@@ -3,7 +3,7 @@ import { getNameEconomicGroup } from "./components/get-name-economic-group.js";
 import { generateBadge } from "./components/generate-badge.js";
 import { getPeriodTimeEvaluationDiagnostic } from "./components/get-period-eval-diag.js";
 import { generateTopic } from "./components/topic-block.js";
-import { globalAnswersEvaluationDiagnostic } from "./components/get-global-answereds.js";
+import { generateMetricsFromData } from "./components/general-metrics-eval-diag.js";
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -50,7 +50,7 @@ export function generateFilePdf(dataJson) {
 
     const docDefinition = {
         pageSize: 'A4',
-        pageOrientation: 'landscape',
+        pageOrientation: 'portrait',
         // [left, top, right, bottom] or [horizontal, vertical] or just a number for equal margins
         // 👇 IMPORTANTE: espaço suficiente pro header
         pageMargins: [PAGE_MARGIM_LEFT, PAGE_MARGIM_TOP, PAGE_MARGIM_RIGHT, PAGE_MARGIM_BOTTOM],
@@ -178,100 +178,11 @@ export function generateFilePdf(dataJson) {
             generateTopic({text: `${currentPageSection}`,fontSize: 12,align: 'left',backgroundColor: '#e9ecef',color: '#596CFF',height: 30}),
         );
 
-        globalAnswersEvaluationDiagnostic(dataJson)
-
         if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ADERENCE) || currentUrlPage.includes(ROUTES.EVALUATION.ADERENCE)) {
             // Página de aderência e participação detectada
             docDefinition.content.push(
-                {
-                    table: {
-                        widths: ['*', '*', '*', '16,666667%', '16,666667%', '16,666667%'],
-                        body: [
-                            [
-                                { text: '' },
-                                { text: '' },
-                                { text: '' },
-                                {
-                                    stack: [
-                                        {
-                                            text: [
-                                                { text: 'Pendentes\n', fontSize: 11, color: '#000000', bold: true },
-                                                { text: 'diagnósticos', fontSize: 9, color: '#000000' }
-                                            ],
-                                            margin: [0, 0, 0, 15],
-                                            alignment: 'left'
-                                        },
-                                        {
-                                            text: '0%',
-                                            fontSize: 16,
-                                            bold: true,
-                                            color: '#000000',
-                                            alignment: 'left'
-                                        }
-                                    ]
-                                },
-                                {
-                                    stack: [
-                                        {
-                                            text: [
-                                                { text: 'Respondidas\n', fontSize: 11, color: '#000000', bold: true },
-                                                { text: 'diagnósticos', fontSize: 9, color: '#000000' }
-                                            ],
-                                            margin: [0, 0, 0, 15],
-                                            alignment: 'left'
-                                        },
-                                        {
-                                            text: '10',
-                                            fontSize: 16,
-                                            bold: true,
-                                            color: '#000000',
-                                            alignment: 'left'
-                                        }
-                                    ]
-                                },
-                                {
-                                    stack: [
-                                        {
-                                            text: [
-                                                { text: 'Público total\n', fontSize: 11, color: '#000000', bold: true },
-                                                { text: 'pessoas', fontSize: 9, color: '#000000' }
-                                            ],
-                                            margin: [0, 0, 0, 15],
-                                            alignment: 'left'
-                                        },
-                                        {
-                                            text: '10',
-                                            fontSize: 16,
-                                            bold: true,
-                                            color: '#000000',
-                                            alignment: 'left'
-                                        }
-                                    ]
-                                }
-                            ]
-                        ]
-                    },
-                    layout: {
-                        hLineWidth: () => 0,
-                        vLineWidth: (i) => {
-                            if (i === 3 || i === 4 || i === 5) return 2;
-                            return 0;
-                        },
-                        vLineColor: (i) => {
-                            if (i === 3) return '#BA2A9B'; // vermelho
-                            if (i === 4) return '#65d34a'; // verde
-                            if (i === 5) return '#0077c2'; // azul
-                            return null;
-                        },
-                        paddingLeft: () => 10,
-                        paddingRight: () => 10,
-                        paddingTop: () => 0,
-                        paddingBottom: () => 0
-                    },
-                    margin: [0, 20, 0, 20]
-                }
+                generateMetricsFromData(dataJson)
             );
-
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS) || currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
             // Página de respostas detectada
