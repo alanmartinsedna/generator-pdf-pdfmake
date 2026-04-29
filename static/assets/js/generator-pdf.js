@@ -4,6 +4,7 @@ import { generateBadge } from "./components/generate-badge.js";
 import { getPeriodTimeEvaluationDiagnostic } from "./components/get-period-eval-diag.js";
 import { generateTopic } from "./components/topic-block.js";
 import { generateMetricsFromData } from "./components/general-metrics-eval-diag.js";
+import { generateAderenceTableGroups } from "./components/generate-aderence-groups.js";
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -139,6 +140,16 @@ export function generateFilePdf(dataJson) {
                 alignment: 'justify',
                 leadingIndent: 20,
                 lineHeight: 1.3
+            },
+            'mainRowInternalTable': {
+                fontSize: 10,
+                bold: false,
+                color: '#000000'
+            },
+            'rowsInternalTable': {
+                fontSize: 8,
+                bold: false,
+                color: '#000000'
             }
         }
     };
@@ -182,6 +193,9 @@ export function generateFilePdf(dataJson) {
             // Página de aderência e participação detectada
             docDefinition.content.push(
                 generateMetricsFromData(dataJson)
+            );
+            docDefinition.content.push(
+                ...generateAderenceTableGroups(dataJson)
             );
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS) || currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
