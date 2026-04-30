@@ -3,7 +3,8 @@ export function generateAderenceTableGroups(data) {
 
     let publicGroups = data.reportData[0].public_groups;
 
-    let tables = [];
+    let elements = [];
+    let index = 0;
 
     for (const group of publicGroups) {
 
@@ -11,6 +12,8 @@ export function generateAderenceTableGroups(data) {
         let totalPublicGroup = group.peopleGroup.totalPeople;
         let totalPeopleAnswered = group.peopleGroup.answered;
         let totalPeopleNotAnswered = group.peopleGroup.notAnswered;
+
+        let historicUserTimelIneByGroup = group.peopleGroup.historicUserTimelIne || [];
 
         let percentageAnswered = totalPublicGroup > 0 
             ? (totalPeopleAnswered / totalPublicGroup) * 100 
@@ -20,12 +23,18 @@ export function generateAderenceTableGroups(data) {
             ? (totalPeopleNotAnswered / totalPublicGroup) * 100 
             : 0;
 
-        const table = {
+        // =========================
+        // 📌 TABELA 1 → MÉTRICAS
+        // =========================
+        const tableMetrics = {
+            // quebra antes de cada grupo (exceto o primeiro)
+            // pageBreak: index === 0 ? undefined : 'before',
+
             table: {
                 widths: ['50%', '25%', '25%'],
                 body: [
                     [
-                        { 
+                        {
                             text: groupName,
                             fontSize: 16,
                             bold: true
@@ -68,72 +77,14 @@ export function generateAderenceTableGroups(data) {
                                 }
                             ]
                         }
-                    ],
-                    [
-                        {
-                            colSpan: 3,
-                            margin: [5,5,5,5],
-                            table: {
-                                headerRows: 1,
-                                widths: ['25%', '15%', '15%', '15%', '15%', '15%'],
-                                body: [
-                                    [
-                                        {text:'Participante', style: 'mainRowInternalTable'},
-                                        {text:'Adicionado em:', style: 'mainRowInternalTable'},
-                                        {text:'Última notificação', style: 'mainRowInternalTable'},
-                                        {text:'Último acesso', style: 'mainRowInternalTable'},
-                                        {text:'Respondido em:', style: 'mainRowInternalTable'},
-                                        {text:'Total notificações', style: 'mainRowInternalTable'},
-                                    ],
-                                    [
-                                        {text:'João Silva', style:'rowsInternalTable'},
-                                        {text:'01/03/2026', style:'rowsInternalTable'},
-                                        {text:'05/03/2026', style:'rowsInternalTable'},
-                                        {text:'N/A', style:'rowsInternalTable'},
-                                        {text:'N/A', style:'rowsInternalTable'},
-                                        {text:'2', style:'rowsInternalTable'}
-                                    ],
-                                    [
-                                        {text:'Maria Souza', style:'rowsInternalTable'},
-                                        {text:'02/03/2026', style:'rowsInternalTable'},
-                                        {text:'06/03/2026', style:'rowsInternalTable'},
-                                        {text:'07/03/2026', style:'rowsInternalTable'},
-                                        {text:'07/03/2026', style:'rowsInternalTable'},
-                                        {text:'3', style:'rowsInternalTable'}
-                                    ],
-                                    [
-                                        {text:'Carlos Lima', style:'rowsInternalTable'},
-                                        {text:'03/03/2026', style:'rowsInternalTable'},
-                                        {text:'07/03/2026', style:'rowsInternalTable'},
-                                        {text:'08/03/2026', style:'rowsInternalTable'},
-                                        {text:'08/03/2026', style:'rowsInternalTable'},
-                                        {text:'1', style:'rowsInternalTable'}
-                                    ],
-                                ]
-                            },
-                            layout: {
-                                fillColor: function (rowIndex) {
-                                    if (rowIndex === 0) {
-                                        return '#e9ecef'
-                                    } else if (rowIndex >= 1) {
-                                        return '#ffffff'
-                                    }; 
-                                },
-                                
-                            }
-                        },
-                        {},
-                        {},
                     ]
                 ]
             },
+
             layout: {
                 fillColor: '#f5f5f5',
                 hLineWidth: () => 0,
-                vLineWidth: (i) => {
-                    if (i === 1 || i === 2) return 2;
-                    return 0;
-                },
+                vLineWidth: (i) => (i === 1 || i === 2 ? 2 : 0),
                 vLineColor: (i) => {
                     if (i === 1) return '#BA2A9B';
                     if (i === 2) return '#65d34a';
@@ -144,11 +95,84 @@ export function generateAderenceTableGroups(data) {
                 paddingTop: () => 10,
                 paddingBottom: () => 10
             },
-            margin: [0, 10, 0, 10] // 👈 importante pra separar visualmente
+
+            margin: [0, 10, 0, 5]
         };
 
-        tables.push(table);
+        // =========================
+        // 📌 TABELA 2 → TIMELINE
+        // =========================
+        let internalBody = [];
+
+        // HEADER
+        internalBody.push([
+            {text:'Participante', style: 'mainRowInternalTable'},
+            {text:'Adicionado em:', style: 'mainRowInternalTable'},
+            {text:'Última notificação', style: 'mainRowInternalTable'},
+            {text:'Último acesso', style: 'mainRowInternalTable'},
+            {text:'Respondido em:', style: 'mainRowInternalTable'},
+            {text:'Total notificações', style: 'mainRowInternalTable'},
+        ]);
+
+        if (historicUserTimelIneByGroup.length > 0) {
+
+            for (const userTimeline of historicUserTimelIneByGroup) {
+
+                let userName = userTimeline.userName || '-';
+                let userEmail = userTimeline.userEmail || '-';
+                let userNameEmail = `${userName}\n${userEmail}`;
+
+                let invitedAtDate = userTimeline.invitedAtDate || '-';
+                let lastNotificationDate = userTimeline.lastNotificationDate || '-';
+                let lastAccessDate = userTimeline.lastAccessDate || '-';
+                let answeredDate = userTimeline.answeredDate || '-';
+                let totalNotifications = userTimeline.totalNotifications ?? '-';
+
+                internalBody.push([
+                    {text: userNameEmail, style:'rowsInternalTable'},
+                    {text: invitedAtDate, style:'rowsInternalTable'},
+                    {text: lastNotificationDate, style:'rowsInternalTable'},
+                    {text: lastAccessDate, style:'rowsInternalTable'},
+                    {text: answeredDate, style:'rowsInternalTable'},
+                    {text: totalNotifications, style:'rowsInternalTable'}
+                ]);
+            }
+
+        } else {
+            internalBody.push([
+                {text: 'Sem dados', colSpan: 6, alignment: 'center', margin: [0,10,0,10]},
+                {}, {}, {}, {}, {}
+            ]);
+        }
+
+        const tableTimeline = {
+            table: {
+                headerRows: 1,
+                widths: ['25%', '15%', '15%', '15%', '15%', '15%'],
+                heights: function (rowIndex) {
+                    return rowIndex === 0 ? 30 : 20;
+                },
+                body: internalBody
+            },
+
+            layout: {
+                fillColor: (rowIndex) =>
+                    rowIndex === 0 ? '#e9ecef' : '#ffffff',
+                hLineWidth: () => 0.5,
+                vLineWidth: () => 0.5
+            },
+
+            margin: [0, 0, 0, 10]
+        };
+
+        // =========================
+        // 📌 PUSH FINAL (DUAS TABELAS)
+        // =========================
+        elements.push(tableMetrics);
+        elements.push(tableTimeline);
+
+        index++;
     }
 
-    return tables;
+    return elements;
 }
