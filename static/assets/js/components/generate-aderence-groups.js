@@ -27,9 +27,6 @@ export function generateAderenceTableGroups(data) {
         // 📌 TABELA 1 → MÉTRICAS
         // =========================
         const tableMetrics = {
-            // quebra antes de cada grupo (exceto o primeiro)
-            // pageBreak: index === 0 ? undefined : 'before',
-
             table: {
                 widths: ['50%', '25%', '25%'],
                 body: [
@@ -40,7 +37,6 @@ export function generateAderenceTableGroups(data) {
                             bold: true
                         },
 
-                        // 🔴 PENDENTES
                         {
                             stack: [
                                 {
@@ -59,7 +55,6 @@ export function generateAderenceTableGroups(data) {
                             ]
                         },
 
-                        // 🟢 RESPONDIDAS
                         {
                             stack: [
                                 {
@@ -106,12 +101,12 @@ export function generateAderenceTableGroups(data) {
 
         // HEADER
         internalBody.push([
-            {text:'Participante', style: 'mainRowInternalTable'},
-            {text:'Adicionado em:', style: 'mainRowInternalTable'},
-            {text:'Última notificação', style: 'mainRowInternalTable'},
-            {text:'Último acesso', style: 'mainRowInternalTable'},
-            {text:'Respondido em:', style: 'mainRowInternalTable'},
-            {text:'Total notificações', style: 'mainRowInternalTable'},
+            { text:'Participante', style: 'mainRowInternalTable', alignment: 'left', valign: 'middle' },
+            { text:'Adicionado em:', style: 'mainRowInternalTable', alignment: 'center', valign: 'middle' },
+            { text:'Última notificação', style: 'mainRowInternalTable', alignment: 'center', valign: 'middle' },
+            { text:'Último acesso', style: 'mainRowInternalTable', alignment: 'center', valign: 'middle' },
+            { text:'Respondido em:', style: 'mainRowInternalTable', alignment: 'center', valign: 'middle' },
+            { text:'Total notificações', style: 'mainRowInternalTable', alignment: 'center', valign: 'middle' },
         ]);
 
         if (historicUserTimelIneByGroup.length > 0) {
@@ -129,18 +124,56 @@ export function generateAderenceTableGroups(data) {
                 let totalNotifications = userTimeline.totalNotifications ?? '-';
 
                 internalBody.push([
-                    {text: userNameEmail, style:'rowsInternalTable'},
-                    {text: invitedAtDate, style:'rowsInternalTable'},
-                    {text: lastNotificationDate, style:'rowsInternalTable'},
-                    {text: lastAccessDate, style:'rowsInternalTable'},
-                    {text: answeredDate, style:'rowsInternalTable'},
-                    {text: totalNotifications, style:'rowsInternalTable'}
+                    // COLUNA 1 → LEFT + MIDDLE
+                    {
+                        text: userNameEmail,
+                        style:'rowsInternalTable',
+                        alignment: 'left',
+                        valign: 'middle'
+                    },
+
+                    // COLUNAS 2+ → CENTER + MIDDLE
+                    {
+                        text: invitedAtDate,
+                        style:'rowsInternalTable',
+                        alignment: 'center',
+                        valign: 'middle'
+                    },
+                    {
+                        text: lastNotificationDate,
+                        style:'rowsInternalTable',
+                        alignment: 'center',
+                        valign: 'middle'
+                    },
+                    {
+                        text: lastAccessDate,
+                        style:'rowsInternalTable',
+                        alignment: 'center',
+                        valign: 'middle'
+                    },
+                    {
+                        text: answeredDate,
+                        style:'rowsInternalTable',
+                        alignment: 'center',
+                        valign: 'middle'
+                    },
+                    {
+                        text: totalNotifications,
+                        style:'rowsInternalTable',
+                        alignment: 'center',
+                        valign: 'middle'
+                    }
                 ]);
             }
 
         } else {
             internalBody.push([
-                {text: 'Sem dados', colSpan: 6, alignment: 'center', margin: [0,10,0,10]},
+                {
+                    text: 'Sem dados',
+                    colSpan: 6,
+                    alignment: 'center',
+                    margin: [0,10,0,10]
+                },
                 {}, {}, {}, {}, {}
             ]);
         }
@@ -150,7 +183,7 @@ export function generateAderenceTableGroups(data) {
                 headerRows: 1,
                 widths: ['25%', '15%', '15%', '15%', '15%', '15%'],
                 heights: function (rowIndex) {
-                    return rowIndex === 0 ? 30 : 20;
+                    return rowIndex === 0 ? 40 : 28;
                 },
                 body: internalBody
             },
@@ -165,9 +198,6 @@ export function generateAderenceTableGroups(data) {
             margin: [0, 0, 0, 10]
         };
 
-        // =========================
-        // 📌 PUSH FINAL (DUAS TABELAS)
-        // =========================
         elements.push(tableMetrics);
         elements.push(tableTimeline);
 
