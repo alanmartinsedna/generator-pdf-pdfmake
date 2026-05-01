@@ -49,9 +49,12 @@ export function generateFilePdf(dataJson) {
     const PAGE_MARGIM_LEFT = 30; // margem esquerda para evitar sobreposição com o header
     const PAGE_MARGIM_RIGHT = 30; // margem direita para evitar sobreposição com o header
 
+    // const pageOrientationType = 'landscape'
+    const pageOrientationType = 'portrait'
+
     const docDefinition = {
         pageSize: 'A4',
-        pageOrientation: 'portrait',
+        pageOrientation: pageOrientationType,
         // [left, top, right, bottom] or [horizontal, vertical] or just a number for equal margins
         // 👇 IMPORTANTE: espaço suficiente pro header
         pageMargins: [PAGE_MARGIM_LEFT, PAGE_MARGIM_TOP, PAGE_MARGIM_RIGHT, PAGE_MARGIM_BOTTOM],
