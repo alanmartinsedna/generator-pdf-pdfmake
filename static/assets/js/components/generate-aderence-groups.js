@@ -78,7 +78,6 @@ export function generateAderenceTableGroups(data) {
             },
 
             layout: {
-                fillColor: '#f5f5f5',
                 hLineWidth: () => 0,
                 vLineWidth: (i) => (i === 1 || i === 2 ? 2 : 0),
                 vLineColor: (i) => {
