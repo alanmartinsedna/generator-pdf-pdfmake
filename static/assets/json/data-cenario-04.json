@@ -4,7 +4,7 @@
       "methodName": "Avaliação de Maturidade do Programa de Privacidade - Collection",
       "economicGroup": "Collection Motors Lexus",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
-      "durationPeriod":{
+      "durationPeriod": {
         "startDate": "09/01/2026",
         "endDate": "28/06/2026"
       },
@@ -16,7 +16,846 @@
             "totalPeople": 93,
             "answered": 12,
             "notAnswered": 81,
-            "avarageGroup": 0.3
+            "avarageGroup": 0.3,
+            "historicUserTimelIne": [
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@empresa.com",
+                "invitedAtDate": "06/04/2026",
+                "lastNotificationDate": "14/04/2026",
+                "lastAccessDate": "12/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@empresa.com",
+                "invitedAtDate": "10/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "10/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@outlook.com",
+                "invitedAtDate": "29/01/2026",
+                "lastNotificationDate": "07/02/2026",
+                "lastAccessDate": "29/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@outlook.com",
+                "invitedAtDate": "11/03/2026",
+                "lastNotificationDate": "15/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@yahoo.com",
+                "invitedAtDate": "28/04/2026",
+                "lastNotificationDate": "29/04/2026",
+                "lastAccessDate": "02/05/2026",
+                "answeredDate": "02/05/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@empresa.com",
+                "invitedAtDate": "05/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@gmail.com",
+                "invitedAtDate": "08/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "14/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@outlook.com",
+                "invitedAtDate": "17/04/2026",
+                "lastNotificationDate": "18/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@gmail.com",
+                "invitedAtDate": "08/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "22/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@yahoo.com",
+                "invitedAtDate": "18/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@gmail.com",
+                "invitedAtDate": "20/02/2026",
+                "lastNotificationDate": "27/02/2026",
+                "lastAccessDate": "28/02/2026",
+                "answeredDate": "28/02/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@outlook.com",
+                "invitedAtDate": "13/03/2026",
+                "lastNotificationDate": "14/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@yahoo.com",
+                "invitedAtDate": "22/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "27/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@yahoo.com",
+                "invitedAtDate": "01/02/2026",
+                "lastNotificationDate": "05/02/2026",
+                "lastAccessDate": "04/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@empresa.com",
+                "invitedAtDate": "12/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@empresa.com",
+                "invitedAtDate": "27/02/2026",
+                "lastNotificationDate": "08/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@yahoo.com",
+                "invitedAtDate": "15/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@yahoo.com",
+                "invitedAtDate": "11/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@gmail.com",
+                "invitedAtDate": "17/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@yahoo.com",
+                "invitedAtDate": "22/01/2026",
+                "lastNotificationDate": "24/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@yahoo.com",
+                "invitedAtDate": "12/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@outlook.com",
+                "invitedAtDate": "24/03/2026",
+                "lastNotificationDate": "24/03/2026",
+                "lastAccessDate": "27/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@yahoo.com",
+                "invitedAtDate": "26/01/2026",
+                "lastNotificationDate": "28/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@yahoo.com",
+                "invitedAtDate": "12/01/2026",
+                "lastNotificationDate": "13/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Beatriz Rocha",
+                "userEmail": "beatriz.rocha@empresa.com",
+                "invitedAtDate": "10/01/2026",
+                "lastNotificationDate": "13/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@gmail.com",
+                "invitedAtDate": "31/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@yahoo.com",
+                "invitedAtDate": "08/03/2026",
+                "lastNotificationDate": "09/03/2026",
+                "lastAccessDate": "12/03/2026",
+                "answeredDate": "12/03/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@outlook.com",
+                "invitedAtDate": "29/04/2026",
+                "lastNotificationDate": "02/05/2026",
+                "lastAccessDate": "05/05/2026",
+                "answeredDate": "05/05/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@gmail.com",
+                "invitedAtDate": "03/01/2026",
+                "lastNotificationDate": "10/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@empresa.com",
+                "invitedAtDate": "18/01/2026",
+                "lastNotificationDate": "27/01/2026",
+                "lastAccessDate": "25/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@empresa.com",
+                "invitedAtDate": "16/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "24/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@empresa.com",
+                "invitedAtDate": "24/02/2026",
+                "lastNotificationDate": "26/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@outlook.com",
+                "invitedAtDate": "14/01/2026",
+                "lastNotificationDate": "21/01/2026",
+                "lastAccessDate": "21/01/2026",
+                "answeredDate": "21/01/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@outlook.com",
+                "invitedAtDate": "27/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@gmail.com",
+                "invitedAtDate": "26/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "04/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@gmail.com",
+                "invitedAtDate": "13/03/2026",
+                "lastNotificationDate": "13/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@gmail.com",
+                "invitedAtDate": "27/01/2026",
+                "lastNotificationDate": "03/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@empresa.com",
+                "invitedAtDate": "19/01/2026",
+                "lastNotificationDate": "24/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@gmail.com",
+                "invitedAtDate": "28/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "06/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@gmail.com",
+                "invitedAtDate": "25/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "04/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@outlook.com",
+                "invitedAtDate": "16/01/2026",
+                "lastNotificationDate": "16/01/2026",
+                "lastAccessDate": "24/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@outlook.com",
+                "invitedAtDate": "02/01/2026",
+                "lastNotificationDate": "11/01/2026",
+                "lastAccessDate": "09/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@empresa.com",
+                "invitedAtDate": "09/03/2026",
+                "lastNotificationDate": "16/03/2026",
+                "lastAccessDate": "18/03/2026",
+                "answeredDate": "18/03/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@empresa.com",
+                "invitedAtDate": "11/01/2026",
+                "lastNotificationDate": "12/01/2026",
+                "lastAccessDate": "12/01/2026",
+                "answeredDate": "12/01/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Ricardo Costa",
+                "userEmail": "ricardo.costa@gmail.com",
+                "invitedAtDate": "20/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "20/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@outlook.com",
+                "invitedAtDate": "10/04/2026",
+                "lastNotificationDate": "17/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ricardo Costa",
+                "userEmail": "ricardo.costa@empresa.com",
+                "invitedAtDate": "22/03/2026",
+                "lastNotificationDate": "28/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@outlook.com",
+                "invitedAtDate": "09/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "13/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@outlook.com",
+                "invitedAtDate": "11/04/2026",
+                "lastNotificationDate": "12/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@empresa.com",
+                "invitedAtDate": "03/03/2026",
+                "lastNotificationDate": "09/03/2026",
+                "lastAccessDate": "03/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@gmail.com",
+                "invitedAtDate": "06/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@outlook.com",
+                "invitedAtDate": "04/03/2026",
+                "lastNotificationDate": "13/03/2026",
+                "lastAccessDate": "17/03/2026",
+                "answeredDate": "17/03/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@yahoo.com",
+                "invitedAtDate": "15/01/2026",
+                "lastNotificationDate": "16/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@empresa.com",
+                "invitedAtDate": "19/02/2026",
+                "lastNotificationDate": "28/02/2026",
+                "lastAccessDate": "03/03/2026",
+                "answeredDate": "03/03/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@empresa.com",
+                "invitedAtDate": "02/02/2026",
+                "lastNotificationDate": "07/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@empresa.com",
+                "invitedAtDate": "31/03/2026",
+                "lastNotificationDate": "03/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@gmail.com",
+                "invitedAtDate": "09/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "13/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@outlook.com",
+                "invitedAtDate": "07/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "17/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@gmail.com",
+                "invitedAtDate": "24/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@empresa.com",
+                "invitedAtDate": "17/02/2026",
+                "lastNotificationDate": "23/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@outlook.com",
+                "invitedAtDate": "20/02/2026",
+                "lastNotificationDate": "28/02/2026",
+                "lastAccessDate": "23/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@gmail.com",
+                "invitedAtDate": "05/01/2026",
+                "lastNotificationDate": "11/01/2026",
+                "lastAccessDate": "18/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@outlook.com",
+                "invitedAtDate": "16/02/2026",
+                "lastNotificationDate": "18/02/2026",
+                "lastAccessDate": "27/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@gmail.com",
+                "invitedAtDate": "26/04/2026",
+                "lastNotificationDate": "05/05/2026",
+                "lastAccessDate": "30/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@gmail.com",
+                "invitedAtDate": "04/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "17/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@outlook.com",
+                "invitedAtDate": "07/04/2026",
+                "lastNotificationDate": "12/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@outlook.com",
+                "invitedAtDate": "28/03/2026",
+                "lastNotificationDate": "03/04/2026",
+                "lastAccessDate": "28/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@outlook.com",
+                "invitedAtDate": "01/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@gmail.com",
+                "invitedAtDate": "09/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "17/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ricardo Costa",
+                "userEmail": "ricardo.costa@empresa.com",
+                "invitedAtDate": "05/02/2026",
+                "lastNotificationDate": "14/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@gmail.com",
+                "invitedAtDate": "10/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "14/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@yahoo.com",
+                "invitedAtDate": "26/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@gmail.com",
+                "invitedAtDate": "21/01/2026",
+                "lastNotificationDate": "26/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@empresa.com",
+                "invitedAtDate": "29/01/2026",
+                "lastNotificationDate": "29/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Maria Oliveira",
+                "userEmail": "maria.oliveira@empresa.com",
+                "invitedAtDate": "06/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@gmail.com",
+                "invitedAtDate": "05/02/2026",
+                "lastNotificationDate": "09/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@gmail.com",
+                "invitedAtDate": "28/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "06/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@gmail.com",
+                "invitedAtDate": "13/03/2026",
+                "lastNotificationDate": "18/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@outlook.com",
+                "invitedAtDate": "06/04/2026",
+                "lastNotificationDate": "10/04/2026",
+                "lastAccessDate": "18/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Ricardo Costa",
+                "userEmail": "ricardo.costa@outlook.com",
+                "invitedAtDate": "12/04/2026",
+                "lastNotificationDate": "21/04/2026",
+                "lastAccessDate": "22/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Carlos Santos",
+                "userEmail": "carlos.santos@outlook.com",
+                "invitedAtDate": "29/03/2026",
+                "lastNotificationDate": "02/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Juliana Pereira",
+                "userEmail": "juliana.pereira@outlook.com",
+                "invitedAtDate": "12/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fernanda Lima",
+                "userEmail": "fernanda.lima@yahoo.com",
+                "invitedAtDate": "15/01/2026",
+                "lastNotificationDate": "22/01/2026",
+                "lastAccessDate": "24/01/2026",
+                "answeredDate": "24/01/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Amanda Souza",
+                "userEmail": "amanda.souza@gmail.com",
+                "invitedAtDate": "17/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "17/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@gmail.com",
+                "invitedAtDate": "24/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "27/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@yahoo.com",
+                "invitedAtDate": "24/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@yahoo.com",
+                "invitedAtDate": "08/04/2026",
+                "lastNotificationDate": "14/04/2026",
+                "lastAccessDate": "16/04/2026",
+                "answeredDate": "16/04/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@gmail.com",
+                "invitedAtDate": "19/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@outlook.com",
+                "invitedAtDate": "25/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Lucas Martins",
+                "userEmail": "lucas.martins@empresa.com",
+                "invitedAtDate": "09/04/2026",
+                "lastNotificationDate": "12/04/2026",
+                "lastAccessDate": "22/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Beatriz Rocha",
+                "userEmail": "beatriz.rocha@outlook.com",
+                "invitedAtDate": "23/04/2026",
+                "lastNotificationDate": "29/04/2026",
+                "lastAccessDate": "05/05/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Gabriel Alves",
+                "userEmail": "gabriel.alves@yahoo.com",
+                "invitedAtDate": "14/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Silva",
+                "userEmail": "joão.silva@outlook.com",
+                "invitedAtDate": "19/02/2026",
+                "lastNotificationDate": "20/02/2026",
+                "lastAccessDate": "24/02/2026",
+                "answeredDate": "24/02/2026",
+                "totalNotifications": "2"
+              }
+            ]
           },
           "answersGroupName": [
             {
@@ -68,7 +907,1746 @@
             "totalPeople": 193,
             "answered": 53,
             "notAnswered": 140,
-            "avarageGroup": 0.3
+            "avarageGroup": 0.3,
+            "historicUserTimelIne": [
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@test.com",
+                "invitedAtDate": "21/02/2026",
+                "lastNotificationDate": "23/02/2026",
+                "lastAccessDate": "27/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Henrique Alves",
+                "userEmail": "henrique.alves@test.com",
+                "invitedAtDate": "17/02/2026",
+                "lastNotificationDate": "20/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@example.com",
+                "invitedAtDate": "23/04/2026",
+                "lastNotificationDate": "25/04/2026",
+                "lastAccessDate": "26/04/2026",
+                "answeredDate": "26/04/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@test.com",
+                "invitedAtDate": "16/01/2026",
+                "lastNotificationDate": "18/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@test.com",
+                "invitedAtDate": "30/01/2026",
+                "lastNotificationDate": "03/02/2026",
+                "lastAccessDate": "05/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@example.com",
+                "invitedAtDate": "29/04/2026",
+                "lastNotificationDate": "02/05/2026",
+                "lastAccessDate": "04/05/2026",
+                "answeredDate": "04/05/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "16/02/2026",
+                "lastNotificationDate": "19/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "03/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@example.com",
+                "invitedAtDate": "05/04/2026",
+                "lastNotificationDate": "08/04/2026",
+                "lastAccessDate": "09/04/2026",
+                "answeredDate": "09/04/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@test.com",
+                "invitedAtDate": "17/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@test.com",
+                "invitedAtDate": "10/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@test.com",
+                "invitedAtDate": "18/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "02/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@example.com",
+                "invitedAtDate": "08/03/2026",
+                "lastNotificationDate": "11/03/2026",
+                "lastAccessDate": "12/03/2026",
+                "answeredDate": "12/03/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@example.com",
+                "invitedAtDate": "15/04/2026",
+                "lastNotificationDate": "16/04/2026",
+                "lastAccessDate": "16/04/2026",
+                "answeredDate": "16/04/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "04/01/2026",
+                "lastNotificationDate": "09/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Nícolas Ferreira",
+                "userEmail": "nicolas.ferreira@test.com",
+                "invitedAtDate": "03/02/2026",
+                "lastNotificationDate": "05/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Sabrina Gomes",
+                "userEmail": "sabrina.gomes@test.com",
+                "invitedAtDate": "31/03/2026",
+                "lastNotificationDate": "03/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@example.com",
+                "invitedAtDate": "23/01/2026",
+                "lastNotificationDate": "26/01/2026",
+                "lastAccessDate": "26/01/2026",
+                "answeredDate": "26/01/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@example.com",
+                "invitedAtDate": "26/01/2026",
+                "lastNotificationDate": "28/01/2026",
+                "lastAccessDate": "29/01/2026",
+                "answeredDate": "29/01/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@example.com",
+                "invitedAtDate": "24/02/2026",
+                "lastNotificationDate": "27/02/2026",
+                "lastAccessDate": "27/02/2026",
+                "answeredDate": "27/02/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@example.com",
+                "invitedAtDate": "07/02/2026",
+                "lastNotificationDate": "10/02/2026",
+                "lastAccessDate": "11/02/2026",
+                "answeredDate": "11/02/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "12/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@example.com",
+                "invitedAtDate": "26/04/2026",
+                "lastNotificationDate": "28/04/2026",
+                "lastAccessDate": "28/04/2026",
+                "answeredDate": "28/04/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@example.com",
+                "invitedAtDate": "23/03/2026",
+                "lastNotificationDate": "24/03/2026",
+                "lastAccessDate": "25/03/2026",
+                "answeredDate": "25/03/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "07/02/2026",
+                "lastNotificationDate": "10/02/2026",
+                "lastAccessDate": "13/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@example.com",
+                "invitedAtDate": "11/01/2026",
+                "lastNotificationDate": "13/01/2026",
+                "lastAccessDate": "14/01/2026",
+                "answeredDate": "14/01/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@example.com",
+                "invitedAtDate": "16/04/2026",
+                "lastNotificationDate": "18/04/2026",
+                "lastAccessDate": "19/04/2026",
+                "answeredDate": "19/04/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@test.com",
+                "invitedAtDate": "30/01/2026",
+                "lastNotificationDate": "02/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@example.com",
+                "invitedAtDate": "19/01/2026",
+                "lastNotificationDate": "22/01/2026",
+                "lastAccessDate": "24/01/2026",
+                "answeredDate": "24/01/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@example.com",
+                "invitedAtDate": "11/01/2026",
+                "lastNotificationDate": "12/01/2026",
+                "lastAccessDate": "12/01/2026",
+                "answeredDate": "12/01/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "13/02/2026",
+                "lastNotificationDate": "14/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "25/04/2026",
+                "lastNotificationDate": "27/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@test.com",
+                "invitedAtDate": "28/02/2026",
+                "lastNotificationDate": "04/03/2026",
+                "lastAccessDate": "06/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@example.com",
+                "invitedAtDate": "15/01/2026",
+                "lastNotificationDate": "18/01/2026",
+                "lastAccessDate": "18/01/2026",
+                "answeredDate": "18/01/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "13/03/2026",
+                "lastNotificationDate": "14/03/2026",
+                "lastAccessDate": "19/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Olívia Souza",
+                "userEmail": "olivia.souza@test.com",
+                "invitedAtDate": "22/03/2026",
+                "lastNotificationDate": "24/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@test.com",
+                "invitedAtDate": "26/02/2026",
+                "lastNotificationDate": "01/03/2026",
+                "lastAccessDate": "04/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@test.com",
+                "invitedAtDate": "24/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@test.com",
+                "invitedAtDate": "09/03/2026",
+                "lastNotificationDate": "14/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "10/04/2026",
+                "lastNotificationDate": "11/04/2026",
+                "lastAccessDate": "16/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@test.com",
+                "invitedAtDate": "10/01/2026",
+                "lastNotificationDate": "14/01/2026",
+                "lastAccessDate": "16/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Olívia Souza",
+                "userEmail": "olivia.souza@example.com",
+                "invitedAtDate": "11/04/2026",
+                "lastNotificationDate": "14/04/2026",
+                "lastAccessDate": "16/04/2026",
+                "answeredDate": "16/04/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Eduarda Lima",
+                "userEmail": "eduarda.lima@test.com",
+                "invitedAtDate": "18/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@test.com",
+                "invitedAtDate": "18/02/2026",
+                "lastNotificationDate": "23/02/2026",
+                "lastAccessDate": "24/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "09/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@example.com",
+                "invitedAtDate": "09/04/2026",
+                "lastNotificationDate": "12/04/2026",
+                "lastAccessDate": "13/04/2026",
+                "answeredDate": "13/04/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "27/03/2026",
+                "lastNotificationDate": "31/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@test.com",
+                "invitedAtDate": "16/02/2026",
+                "lastNotificationDate": "18/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "24/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@test.com",
+                "invitedAtDate": "11/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@example.com",
+                "invitedAtDate": "08/01/2026",
+                "lastNotificationDate": "10/01/2026",
+                "lastAccessDate": "12/01/2026",
+                "answeredDate": "12/01/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "15/01/2026",
+                "lastNotificationDate": "17/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@test.com",
+                "invitedAtDate": "13/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@example.com",
+                "invitedAtDate": "12/01/2026",
+                "lastNotificationDate": "13/01/2026",
+                "lastAccessDate": "13/01/2026",
+                "answeredDate": "13/01/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@test.com",
+                "invitedAtDate": "18/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@example.com",
+                "invitedAtDate": "01/01/2026",
+                "lastNotificationDate": "02/01/2026",
+                "lastAccessDate": "02/01/2026",
+                "answeredDate": "02/01/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "04/04/2026",
+                "lastNotificationDate": "07/04/2026",
+                "lastAccessDate": "10/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "16/03/2026",
+                "lastNotificationDate": "19/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "07/04/2026",
+                "lastNotificationDate": "09/04/2026",
+                "lastAccessDate": "13/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "22/03/2026",
+                "lastNotificationDate": "23/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "03/02/2026",
+                "lastNotificationDate": "05/02/2026",
+                "lastAccessDate": "09/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@test.com",
+                "invitedAtDate": "03/02/2026",
+                "lastNotificationDate": "07/02/2026",
+                "lastAccessDate": "09/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@test.com",
+                "invitedAtDate": "19/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "30/01/2026",
+                "lastNotificationDate": "04/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Nícolas Ferreira",
+                "userEmail": "nicolas.ferreira@test.com",
+                "invitedAtDate": "26/02/2026",
+                "lastNotificationDate": "28/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@test.com",
+                "invitedAtDate": "24/04/2026",
+                "lastNotificationDate": "28/04/2026",
+                "lastAccessDate": "30/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@test.com",
+                "invitedAtDate": "23/04/2026",
+                "lastNotificationDate": "25/04/2026",
+                "lastAccessDate": "29/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "05/02/2026",
+                "lastNotificationDate": "06/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "27/04/2026",
+                "lastNotificationDate": "02/05/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Eduarda Lima",
+                "userEmail": "eduarda.lima@example.com",
+                "invitedAtDate": "15/02/2026",
+                "lastNotificationDate": "17/02/2026",
+                "lastAccessDate": "17/02/2026",
+                "answeredDate": "17/02/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Nícolas Ferreira",
+                "userEmail": "nicolas.ferreira@test.com",
+                "invitedAtDate": "21/03/2026",
+                "lastNotificationDate": "25/03/2026",
+                "lastAccessDate": "27/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Eduarda Lima",
+                "userEmail": "eduarda.lima@test.com",
+                "invitedAtDate": "08/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@test.com",
+                "invitedAtDate": "29/04/2026",
+                "lastNotificationDate": "01/05/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "18/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@example.com",
+                "invitedAtDate": "29/01/2026",
+                "lastNotificationDate": "01/02/2026",
+                "lastAccessDate": "03/02/2026",
+                "answeredDate": "03/02/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "04/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "31/03/2026",
+                "lastNotificationDate": "04/04/2026",
+                "lastAccessDate": "06/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@example.com",
+                "invitedAtDate": "12/01/2026",
+                "lastNotificationDate": "14/01/2026",
+                "lastAccessDate": "16/01/2026",
+                "answeredDate": "16/01/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@test.com",
+                "invitedAtDate": "16/04/2026",
+                "lastNotificationDate": "20/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Nícolas Ferreira",
+                "userEmail": "nicolas.ferreira@test.com",
+                "invitedAtDate": "12/03/2026",
+                "lastNotificationDate": "14/03/2026",
+                "lastAccessDate": "18/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@test.com",
+                "invitedAtDate": "30/03/2026",
+                "lastNotificationDate": "04/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "23/02/2026",
+                "lastNotificationDate": "25/02/2026",
+                "lastAccessDate": "01/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@example.com",
+                "invitedAtDate": "23/02/2026",
+                "lastNotificationDate": "25/02/2026",
+                "lastAccessDate": "27/02/2026",
+                "answeredDate": "27/02/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@example.com",
+                "invitedAtDate": "23/04/2026",
+                "lastNotificationDate": "26/04/2026",
+                "lastAccessDate": "27/04/2026",
+                "answeredDate": "27/04/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@example.com",
+                "invitedAtDate": "02/03/2026",
+                "lastNotificationDate": "04/03/2026",
+                "lastAccessDate": "05/03/2026",
+                "answeredDate": "05/03/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "20/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@test.com",
+                "invitedAtDate": "12/03/2026",
+                "lastNotificationDate": "13/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "17/02/2026",
+                "lastNotificationDate": "18/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Henrique Alves",
+                "userEmail": "henrique.alves@example.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "09/02/2026",
+                "lastAccessDate": "10/02/2026",
+                "answeredDate": "10/02/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@test.com",
+                "invitedAtDate": "01/04/2026",
+                "lastNotificationDate": "06/04/2026",
+                "lastAccessDate": "07/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "24/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "22/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Olívia Souza",
+                "userEmail": "olivia.souza@test.com",
+                "invitedAtDate": "04/03/2026",
+                "lastNotificationDate": "09/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "13/02/2026",
+                "lastNotificationDate": "15/02/2026",
+                "lastAccessDate": "19/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "17/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@test.com",
+                "invitedAtDate": "12/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "23/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@example.com",
+                "invitedAtDate": "18/04/2026",
+                "lastNotificationDate": "20/04/2026",
+                "lastAccessDate": "21/04/2026",
+                "answeredDate": "21/04/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "01/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@test.com",
+                "invitedAtDate": "09/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@example.com",
+                "invitedAtDate": "19/02/2026",
+                "lastNotificationDate": "20/02/2026",
+                "lastAccessDate": "21/02/2026",
+                "answeredDate": "21/02/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@example.com",
+                "invitedAtDate": "23/03/2026",
+                "lastNotificationDate": "24/03/2026",
+                "lastAccessDate": "26/03/2026",
+                "answeredDate": "26/03/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@example.com",
+                "invitedAtDate": "27/02/2026",
+                "lastNotificationDate": "28/02/2026",
+                "lastAccessDate": "02/03/2026",
+                "answeredDate": "02/03/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@example.com",
+                "invitedAtDate": "31/01/2026",
+                "lastNotificationDate": "02/02/2026",
+                "lastAccessDate": "03/02/2026",
+                "answeredDate": "03/02/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@example.com",
+                "invitedAtDate": "31/01/2026",
+                "lastNotificationDate": "03/02/2026",
+                "lastAccessDate": "05/02/2026",
+                "answeredDate": "05/02/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "08/03/2026",
+                "lastNotificationDate": "12/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Nícolas Ferreira",
+                "userEmail": "nicolas.ferreira@test.com",
+                "invitedAtDate": "07/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@test.com",
+                "invitedAtDate": "18/03/2026",
+                "lastNotificationDate": "21/03/2026",
+                "lastAccessDate": "24/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@example.com",
+                "invitedAtDate": "27/01/2026",
+                "lastNotificationDate": "29/01/2026",
+                "lastAccessDate": "29/01/2026",
+                "answeredDate": "29/01/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Henrique Alves",
+                "userEmail": "henrique.alves@test.com",
+                "invitedAtDate": "06/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "23/04/2026",
+                "lastNotificationDate": "27/04/2026",
+                "lastAccessDate": "29/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "03/01/2026",
+                "lastNotificationDate": "06/01/2026",
+                "lastAccessDate": "09/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "13/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@example.com",
+                "invitedAtDate": "10/04/2026",
+                "lastNotificationDate": "11/04/2026",
+                "lastAccessDate": "13/04/2026",
+                "answeredDate": "13/04/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Olívia Souza",
+                "userEmail": "olivia.souza@example.com",
+                "invitedAtDate": "29/01/2026",
+                "lastNotificationDate": "31/01/2026",
+                "lastAccessDate": "31/01/2026",
+                "answeredDate": "31/01/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@test.com",
+                "invitedAtDate": "24/01/2026",
+                "lastNotificationDate": "28/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "21/02/2026",
+                "lastNotificationDate": "24/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "17/02/2026",
+                "lastNotificationDate": "22/02/2026",
+                "lastAccessDate": "23/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Olívia Souza",
+                "userEmail": "olivia.souza@example.com",
+                "invitedAtDate": "17/04/2026",
+                "lastNotificationDate": "20/04/2026",
+                "lastAccessDate": "21/04/2026",
+                "answeredDate": "21/04/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "09/03/2026",
+                "lastNotificationDate": "12/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Henrique Alves",
+                "userEmail": "henrique.alves@test.com",
+                "invitedAtDate": "31/03/2026",
+                "lastNotificationDate": "05/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "30/03/2026",
+                "lastNotificationDate": "02/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@example.com",
+                "invitedAtDate": "25/02/2026",
+                "lastNotificationDate": "28/02/2026",
+                "lastAccessDate": "01/03/2026",
+                "answeredDate": "01/03/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "10/02/2026",
+                "lastNotificationDate": "15/02/2026",
+                "lastAccessDate": "16/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@test.com",
+                "invitedAtDate": "06/02/2026",
+                "lastNotificationDate": "08/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "05/01/2026",
+                "lastNotificationDate": "06/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Olívia Souza",
+                "userEmail": "olivia.souza@test.com",
+                "invitedAtDate": "18/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Karen Martins",
+                "userEmail": "karen.martins@test.com",
+                "invitedAtDate": "11/03/2026",
+                "lastNotificationDate": "15/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "18/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Eduarda Lima",
+                "userEmail": "eduarda.lima@test.com",
+                "invitedAtDate": "27/04/2026",
+                "lastNotificationDate": "01/05/2026",
+                "lastAccessDate": "03/05/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "01/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@example.com",
+                "invitedAtDate": "24/04/2026",
+                "lastNotificationDate": "25/04/2026",
+                "lastAccessDate": "27/04/2026",
+                "answeredDate": "27/04/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@example.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "11/02/2026",
+                "lastAccessDate": "11/02/2026",
+                "answeredDate": "11/02/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "06/01/2026",
+                "lastNotificationDate": "10/01/2026",
+                "lastAccessDate": "12/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "12/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Giovana Costa",
+                "userEmail": "giovana.costa@test.com",
+                "invitedAtDate": "30/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@test.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "14/04/2026",
+                "lastNotificationDate": "16/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "21/02/2026",
+                "lastNotificationDate": "22/02/2026",
+                "lastAccessDate": "27/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@test.com",
+                "invitedAtDate": "23/03/2026",
+                "lastNotificationDate": "27/03/2026",
+                "lastAccessDate": "29/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "28/01/2026",
+                "lastNotificationDate": "01/02/2026",
+                "lastAccessDate": "03/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "19/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Sabrina Gomes",
+                "userEmail": "sabrina.gomes@test.com",
+                "invitedAtDate": "15/03/2026",
+                "lastNotificationDate": "18/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "05/02/2026",
+                "lastNotificationDate": "07/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "31/03/2026",
+                "lastNotificationDate": "01/04/2026",
+                "lastAccessDate": "06/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "20/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@test.com",
+                "invitedAtDate": "15/01/2026",
+                "lastNotificationDate": "17/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Eduarda Lima",
+                "userEmail": "eduarda.lima@test.com",
+                "invitedAtDate": "24/02/2026",
+                "lastNotificationDate": "28/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@test.com",
+                "invitedAtDate": "22/04/2026",
+                "lastNotificationDate": "26/04/2026",
+                "lastAccessDate": "28/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@example.com",
+                "invitedAtDate": "16/03/2026",
+                "lastNotificationDate": "18/03/2026",
+                "lastAccessDate": "19/03/2026",
+                "answeredDate": "19/03/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@test.com",
+                "invitedAtDate": "04/03/2026",
+                "lastNotificationDate": "06/03/2026",
+                "lastAccessDate": "10/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "03/04/2026",
+                "lastNotificationDate": "04/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@test.com",
+                "invitedAtDate": "19/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@test.com",
+                "invitedAtDate": "04/01/2026",
+                "lastNotificationDate": "05/01/2026",
+                "lastAccessDate": "10/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Carla Dias",
+                "userEmail": "carla.dias@test.com",
+                "invitedAtDate": "15/04/2026",
+                "lastNotificationDate": "17/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Sabrina Gomes",
+                "userEmail": "sabrina.gomes@test.com",
+                "invitedAtDate": "25/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@test.com",
+                "invitedAtDate": "23/04/2026",
+                "lastNotificationDate": "24/04/2026",
+                "lastAccessDate": "29/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@test.com",
+                "invitedAtDate": "29/04/2026",
+                "lastNotificationDate": "02/05/2026",
+                "lastAccessDate": "05/05/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@example.com",
+                "invitedAtDate": "01/01/2026",
+                "lastNotificationDate": "03/01/2026",
+                "lastAccessDate": "04/01/2026",
+                "answeredDate": "04/01/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@test.com",
+                "invitedAtDate": "16/01/2026",
+                "lastNotificationDate": "17/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@test.com",
+                "invitedAtDate": "15/03/2026",
+                "lastNotificationDate": "18/03/2026",
+                "lastAccessDate": "21/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Nícolas Ferreira",
+                "userEmail": "nicolas.ferreira@test.com",
+                "invitedAtDate": "13/01/2026",
+                "lastNotificationDate": "15/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@example.com",
+                "invitedAtDate": "26/04/2026",
+                "lastNotificationDate": "29/04/2026",
+                "lastAccessDate": "29/04/2026",
+                "answeredDate": "29/04/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "25/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@test.com",
+                "invitedAtDate": "11/04/2026",
+                "lastNotificationDate": "13/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Sabrina Gomes",
+                "userEmail": "sabrina.gomes@test.com",
+                "invitedAtDate": "06/01/2026",
+                "lastNotificationDate": "11/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Sabrina Gomes",
+                "userEmail": "sabrina.gomes@test.com",
+                "invitedAtDate": "03/02/2026",
+                "lastNotificationDate": "04/02/2026",
+                "lastAccessDate": "09/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@example.com",
+                "invitedAtDate": "21/03/2026",
+                "lastNotificationDate": "22/03/2026",
+                "lastAccessDate": "23/03/2026",
+                "answeredDate": "23/03/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@example.com",
+                "invitedAtDate": "09/02/2026",
+                "lastNotificationDate": "12/02/2026",
+                "lastAccessDate": "12/02/2026",
+                "answeredDate": "12/02/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "Márcia Mendes",
+                "userEmail": "marcia.mendes@test.com",
+                "invitedAtDate": "20/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@example.com",
+                "invitedAtDate": "06/01/2026",
+                "lastNotificationDate": "09/01/2026",
+                "lastAccessDate": "11/01/2026",
+                "answeredDate": "11/01/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@test.com",
+                "invitedAtDate": "12/03/2026",
+                "lastNotificationDate": "15/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "05/03/2026",
+                "lastNotificationDate": "09/03/2026",
+                "lastAccessDate": "11/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@example.com",
+                "invitedAtDate": "18/01/2026",
+                "lastNotificationDate": "19/01/2026",
+                "lastAccessDate": "21/01/2026",
+                "answeredDate": "21/01/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Thiago Barbosa",
+                "userEmail": "thiago.barbosa@example.com",
+                "invitedAtDate": "19/04/2026",
+                "lastNotificationDate": "20/04/2026",
+                "lastAccessDate": "21/04/2026",
+                "answeredDate": "21/04/2026",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "17/01/2026",
+                "lastNotificationDate": "22/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@test.com",
+                "invitedAtDate": "10/01/2026",
+                "lastNotificationDate": "12/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Ana Souza",
+                "userEmail": "ana.souza@test.com",
+                "invitedAtDate": "16/04/2026",
+                "lastNotificationDate": "19/04/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "24/01/2026",
+                "lastNotificationDate": "27/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "Paulo Roberto",
+                "userEmail": "paulo.roberto@test.com",
+                "invitedAtDate": "30/01/2026",
+                "lastNotificationDate": "02/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Eduarda Lima",
+                "userEmail": "eduarda.lima@test.com",
+                "invitedAtDate": "09/04/2026",
+                "lastNotificationDate": "13/04/2026",
+                "lastAccessDate": "15/04/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Bruno Silva",
+                "userEmail": "bruno.silva@example.com",
+                "invitedAtDate": "20/04/2026",
+                "lastNotificationDate": "22/04/2026",
+                "lastAccessDate": "22/04/2026",
+                "answeredDate": "22/04/2026",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "Daniel Ramos",
+                "userEmail": "daniel.ramos@test.com",
+                "invitedAtDate": "05/04/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Olívia Souza",
+                "userEmail": "olivia.souza@test.com",
+                "invitedAtDate": "29/04/2026",
+                "lastNotificationDate": "01/05/2026",
+                "lastAccessDate": "05/05/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Quiteria Lins",
+                "userEmail": "quiteria.lins@example.com",
+                "invitedAtDate": "08/04/2026",
+                "lastNotificationDate": "11/04/2026",
+                "lastAccessDate": "12/04/2026",
+                "answeredDate": "12/04/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@example.com",
+                "invitedAtDate": "20/04/2026",
+                "lastNotificationDate": "21/04/2026",
+                "lastAccessDate": "23/04/2026",
+                "answeredDate": "23/04/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "Henrique Alves",
+                "userEmail": "henrique.alves@test.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "10/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Leonardo Oliveira",
+                "userEmail": "leonardo.oliveira@example.com",
+                "invitedAtDate": "19/01/2026",
+                "lastNotificationDate": "22/01/2026",
+                "lastAccessDate": "24/01/2026",
+                "answeredDate": "24/01/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "Isabela Rocha",
+                "userEmail": "isabela.rocha@test.com",
+                "invitedAtDate": "18/01/2026",
+                "lastNotificationDate": "22/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "João Pereira",
+                "userEmail": "joão.pereira@test.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Fábio Santos",
+                "userEmail": "fabio.santos@test.com",
+                "invitedAtDate": "19/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "Ricardo Nunes",
+                "userEmail": "ricardo.nunes@test.com",
+                "invitedAtDate": "19/02/2026",
+                "lastNotificationDate": "20/02/2026",
+                "lastAccessDate": "25/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              }
+            ]
           },
           "answersGroupName": [
             {

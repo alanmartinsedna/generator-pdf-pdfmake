@@ -4,7 +4,7 @@
       "methodName": "Avaliação de Maturidade do Programa de Privacidade - Aradisa",
       "economicGroup": "Aradisa",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
-      "durationPeriod":{
+      "durationPeriod": {
         "startDate": "25/03/2026",
         "endDate": "14/11/2026"
       },
@@ -16,7 +16,99 @@
             "totalPeople": 10,
             "answered": 5,
             "notAnswered": 5,
-            "avarageGroup": 0.5
+            "avarageGroup": 0.5,
+            "historicUserTimelIne": [
+              {
+                "userName": "User 3",
+                "userEmail": "user3@email.com",
+                "invitedAtDate": "10/03/2026",
+                "lastNotificationDate": "04/02/2026",
+                "lastAccessDate": "18/01/2026",
+                "answeredDate": "31/01/2026",
+                "totalNotifications": "6"
+              },
+              {
+                "userName": "User NR 1",
+                "userEmail": "user_nr1@email.com",
+                "invitedAtDate": "20/01/2026",
+                "lastNotificationDate": "08/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User 5",
+                "userEmail": "user5@email.com",
+                "invitedAtDate": "31/01/2026",
+                "lastNotificationDate": "28/01/2026",
+                "lastAccessDate": "17/01/2026",
+                "answeredDate": "01/03/2026",
+                "totalNotifications": "10"
+              },
+              {
+                "userName": "User 4",
+                "userEmail": "user4@email.com",
+                "invitedAtDate": "25/02/2026",
+                "lastNotificationDate": "01/01/2026",
+                "lastAccessDate": "07/01/2026",
+                "answeredDate": "04/03/2026",
+                "totalNotifications": "10"
+              },
+              {
+                "userName": "User NR 5",
+                "userEmail": "user_nr5@email.com",
+                "invitedAtDate": "02/03/2026",
+                "lastNotificationDate": "05/03/2026",
+                "lastAccessDate": "26/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User NR 3",
+                "userEmail": "user_nr3@email.com",
+                "invitedAtDate": "10/03/2026",
+                "lastNotificationDate": "13/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "User 2",
+                "userEmail": "user2@email.com",
+                "invitedAtDate": "02/03/2026",
+                "lastNotificationDate": "03/02/2026",
+                "lastAccessDate": "26/01/2026",
+                "answeredDate": "18/02/2026",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "User NR 2",
+                "userEmail": "user_nr2@email.com",
+                "invitedAtDate": "02/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "18/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "User NR 4",
+                "userEmail": "user_nr4@email.com",
+                "invitedAtDate": "26/02/2026",
+                "lastNotificationDate": "08/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User 1",
+                "userEmail": "user1@email.com",
+                "invitedAtDate": "09/02/2026",
+                "lastNotificationDate": "03/03/2026",
+                "lastAccessDate": "20/01/2026",
+                "answeredDate": "06/02/2026",
+                "totalNotifications": "3"
+              }
+            ]
           },
           "answersGroupName": [
             {
@@ -68,7 +160,306 @@
             "totalPeople": 33,
             "answered": 5,
             "notAnswered": 28,
-            "avarageGroup": 0.5
+            "avarageGroup": 0.5,
+            "historicUserTimelIne": [
+              {
+                "userName": "User NR 11",
+                "userEmail": "user_nr11@email.com",
+                "invitedAtDate": "09/02/2026",
+                "lastNotificationDate": "16/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User NR 17",
+                "userEmail": "user_nr17@email.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User NR 3",
+                "userEmail": "user_nr3@email.com",
+                "invitedAtDate": "09/01/2026",
+                "lastNotificationDate": "16/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User NR 6",
+                "userEmail": "user_nr6@email.com",
+                "invitedAtDate": "03/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "18/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "User NR 4",
+                "userEmail": "user_nr4@email.com",
+                "invitedAtDate": "05/01/2026",
+                "lastNotificationDate": "30/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User 4",
+                "userEmail": "user4@email.com",
+                "invitedAtDate": "08/02/2026",
+                "lastNotificationDate": "30/01/2026",
+                "lastAccessDate": "06/01/2026",
+                "answeredDate": "15/01/2026",
+                "totalNotifications": "8"
+              },
+              {
+                "userName": "User NR 18",
+                "userEmail": "user_nr18@email.com",
+                "invitedAtDate": "25/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User NR 8",
+                "userEmail": "user_nr8@email.com",
+                "invitedAtDate": "22/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "26/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User NR 24",
+                "userEmail": "user_nr24@email.com",
+                "invitedAtDate": "09/01/2026",
+                "lastNotificationDate": "16/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User NR 20",
+                "userEmail": "user_nr20@email.com",
+                "invitedAtDate": "06/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "09/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User 3",
+                "userEmail": "user3@email.com",
+                "invitedAtDate": "03/02/2026",
+                "lastNotificationDate": "24/02/2026",
+                "lastAccessDate": "23/01/2026",
+                "answeredDate": "10/02/2026",
+                "totalNotifications": "6"
+              },
+              {
+                "userName": "User NR 2",
+                "userEmail": "user_nr2@email.com",
+                "invitedAtDate": "02/01/2026",
+                "lastNotificationDate": "02/03/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User 2",
+                "userEmail": "user2@email.com",
+                "invitedAtDate": "05/02/2026",
+                "lastNotificationDate": "20/01/2026",
+                "lastAccessDate": "02/02/2026",
+                "answeredDate": "17/01/2026",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User NR 1",
+                "userEmail": "user_nr1@email.com",
+                "invitedAtDate": "05/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "07/03/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User NR 10",
+                "userEmail": "user_nr10@email.com",
+                "invitedAtDate": "09/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User 5",
+                "userEmail": "user5@email.com",
+                "invitedAtDate": "12/02/2026",
+                "lastNotificationDate": "05/03/2026",
+                "lastAccessDate": "06/02/2026",
+                "answeredDate": "26/01/2026",
+                "totalNotifications": "8"
+              },
+              {
+                "userName": "User NR 13",
+                "userEmail": "user_nr13@email.com",
+                "invitedAtDate": "13/01/2026",
+                "lastNotificationDate": "16/02/2026",
+                "lastAccessDate": "31/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User NR 16",
+                "userEmail": "user_nr16@email.com",
+                "invitedAtDate": "18/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "User NR 19",
+                "userEmail": "user_nr19@email.com",
+                "invitedAtDate": "06/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "3"
+              },
+              {
+                "userName": "User NR 28",
+                "userEmail": "user_nr28@email.com",
+                "invitedAtDate": "04/01/2026",
+                "lastNotificationDate": "22/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "User NR 26",
+                "userEmail": "user_nr26@email.com",
+                "invitedAtDate": "13/01/2026",
+                "lastNotificationDate": "14/01/2026",
+                "lastAccessDate": "16/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User NR 27",
+                "userEmail": "user_nr27@email.com",
+                "invitedAtDate": "16/02/2026",
+                "lastNotificationDate": "02/01/2026",
+                "lastAccessDate": "18/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "4"
+              },
+              {
+                "userName": "User NR 25",
+                "userEmail": "user_nr25@email.com",
+                "invitedAtDate": "08/03/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "User NR 7",
+                "userEmail": "user_nr7@email.com",
+                "invitedAtDate": "13/01/2026",
+                "lastNotificationDate": "22/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User NR 5",
+                "userEmail": "user_nr5@email.com",
+                "invitedAtDate": "21/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "27/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User NR 21",
+                "userEmail": "user_nr21@email.com",
+                "invitedAtDate": "10/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "0"
+              },
+              {
+                "userName": "User NR 14",
+                "userEmail": "user_nr14@email.com",
+                "invitedAtDate": "25/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "23/01/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              },
+              {
+                "userName": "User NR 15",
+                "userEmail": "user_nr15@email.com",
+                "invitedAtDate": "08/03/2026",
+                "lastNotificationDate": "05/02/2026",
+                "lastAccessDate": "09/02/2026",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User NR 9",
+                "userEmail": "user_nr9@email.com",
+                "invitedAtDate": "19/02/2026",
+                "lastNotificationDate": "30/01/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User NR 22",
+                "userEmail": "user_nr22@email.com",
+                "invitedAtDate": "27/02/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User 1",
+                "userEmail": "user1@email.com",
+                "invitedAtDate": "09/01/2026",
+                "lastNotificationDate": "10/01/2026",
+                "lastAccessDate": "03/03/2026",
+                "answeredDate": "22/02/2026",
+                "totalNotifications": "2"
+              },
+              {
+                "userName": "User NR 23",
+                "userEmail": "user_nr23@email.com",
+                "invitedAtDate": "15/01/2026",
+                "lastNotificationDate": "N/A",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "1"
+              },
+              {
+                "userName": "User NR 12",
+                "userEmail": "user_nr12@email.com",
+                "invitedAtDate": "20/01/2026",
+                "lastNotificationDate": "04/02/2026",
+                "lastAccessDate": "N/A",
+                "answeredDate": "N/A",
+                "totalNotifications": "5"
+              }
+            ]
           },
           "answersGroupName": [
             {
