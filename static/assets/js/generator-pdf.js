@@ -5,6 +5,7 @@ import { getPeriodTimeEvaluationDiagnostic } from "./components/get-period-eval-
 import { generateTopic } from "./components/topic-block.js";
 import { generateMetricsFromData } from "./components/general-metrics-eval-diag.js";
 import { generateAderenceTableGroups } from "./components/generate-aderence-groups.js";
+import { generateScoreCard }  from "./components/score-card.js"
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -203,9 +204,12 @@ export function generateFilePdf(dataJson) {
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS) || currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
             // Página de respostas detectada
+            docDefinition.content.push(generateScoreCard(100, 'Nivel V - Excelente e Estruturado', '#238123'))
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS) || currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
             // Página de recomendações detectada
+            docDefinition.content.push(generateScoreCard(25, 'Razoável', '#c9cc10'))
+
         }
 
 
