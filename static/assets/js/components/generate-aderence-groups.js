@@ -91,7 +91,7 @@ export function generateAderenceTableGroups(data) {
                 paddingBottom: () => 10
             },
 
-            margin: [0, 10, 0, 5]
+            margin: [0, 10, 0, 10]
         };
 
         // =========================
