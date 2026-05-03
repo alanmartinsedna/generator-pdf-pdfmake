@@ -6,6 +6,7 @@ import { generateTopic } from "./components/topic-block.js";
 import { generateMetricsFromData } from "./components/general-metrics-eval-diag.js";
 import { generateAderenceTableGroups } from "./components/generate-aderence-groups.js";
 import { generateScoreCard }  from "./components/score-card.js"
+import { generateScale } from "./components/scale-metrics.js"
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -209,6 +210,22 @@ export function generateFilePdf(dataJson) {
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS) || currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
             // Página de recomendações detectada
             docDefinition.content.push(generateScoreCard(25, 'Razoável', '#c9cc10'))
+            docDefinition.content.push(
+                generateScale({
+                    parts: [
+                        { color: '#ff4d4f', label: 'Péssimo' },
+                        { color: '#ff6f61', label: 'Muito ruim' },
+                        { color: '#ff8c42', label: 'Ruim' },
+                        { color: '#faad14', label: 'Regular baixo' },
+                        { color: '#fadb14', label: 'Regular' },
+                        { color: '#d3f261', label: 'Regular alto' },
+                        { color: '#95de64', label: 'Bom' },
+                        { color: '#52c41a', label: 'Muito bom' },
+                        { color: '#36cfc9', label: 'Ótimo' },
+                        { color: '#1890ff', label: 'Excelente' }
+                    ]
+                })
+            );
 
         }
 
