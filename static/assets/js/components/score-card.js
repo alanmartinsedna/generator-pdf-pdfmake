@@ -1,8 +1,8 @@
 export function generateScoreCard(percentage,statusText,colorContext) {
 
     let cardWidth = 200
-    let cardHeight = 130
-    const circleDiameter = 60;
+    let cardHeight = 120
+    const circleDiameter = 50;
     const circleRadius = circleDiameter / 2;
     const centerX = cardWidth / 2;
     const circleY = 45; // posição vertical dentro do card
@@ -62,12 +62,12 @@ export function generateScoreCard(percentage,statusText,colorContext) {
             },
             // TEXTO DENTRO DO CÍRCULO
             {
-                text: `${percentageValue} %`,
-                fontSize: 18,
+                text: `${percentageValue}%`,
+                fontSize: 14,
                 bold: true,
                 color: cardColor,
                 alignment: 'center',
-                margin: [0, -cardHeight + circleY - 10, 0, 0]
+                margin: [0, -cardHeight + circleY - 8, 0, 0]
             },
             // STATUS
             {
@@ -76,7 +76,7 @@ export function generateScoreCard(percentage,statusText,colorContext) {
                     {
                         width: cardWidth - 10,
                         text: statusCard,
-                        fontSize: 14,
+                        fontSize: 11,
                         bold: true,
                         color: '#FFFFFF',
                         alignment: 'center',
