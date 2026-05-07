@@ -205,10 +205,35 @@ export function generateFilePdf(dataJson) {
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS) || currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
             // Página de respostas detectada
+            docDefinition.content.push(
+                generateTopic({text: 'Resultado',fontSize: 18,align: 'center',backgroundColor: '#ffffff',color: '#000000',height: 18}),
+            );
+
             docDefinition.content.push(generateScoreCard(100, 'Nível X - Otimizado', '#1890ff'))
+
+            docDefinition.content.push(
+                generateScale({
+                    parts: [
+                        { color: '#ff4d4f', label: 'Nível I - Inicial' },
+                        { color: '#ff6f61', label: 'Nível II - Básico' },
+                        { color: '#ff8c42', label: 'Nível III - Emergente' },
+                        { color: '#faad14', label: 'Nível IV - Definido' },
+                        { color: '#fadb14', label: 'Nível V - Gerenciado' },
+                        { color: '#d3f261', label: 'Nível VI - Integrado' },
+                        { color: '#95de64', label: 'Nível VII - Padronizado' },
+                        { color: '#52c41a', label: 'Nível VIII - Estruturado' },
+                        { color: '#36cfc9', label: 'Nível IX - Monitorado' },
+                        { color: '#1890ff', label: 'Nível X - Otimizado' }
+                    ], hasLegend: true
+                })
+            ); 
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS) || currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
             // Página de recomendações detectada
+            docDefinition.content.push(
+                generateTopic({text: 'Percepção geral do público',fontSize: 18,align: 'center',backgroundColor: '#ffffff',color: '#000000',height: 18}),
+            );
+
             docDefinition.content.push(generateScoreCard(75, 'Nível VIII - Estruturado', '#52c41a'))
 
             docDefinition.content.push(
