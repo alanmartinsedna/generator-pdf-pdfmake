@@ -205,30 +205,29 @@ export function generateFilePdf(dataJson) {
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.ANSWERS) || currentUrlPage.includes(ROUTES.EVALUATION.ANSWERS)) {
             // Página de respostas detectada
-            docDefinition.content.push(generateScoreCard(100, 'Nivel V - Excelente e Estruturado', '#238123'))
+            docDefinition.content.push(generateScoreCard(100, 'Nível X - Otimizado', '#1890ff'))
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS) || currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
             // Página de recomendações detectada
-            docDefinition.content.push(generateScoreCard(25, 'Razoável', '#c9cc10'))
+            docDefinition.content.push(generateScoreCard(75, 'Nível VIII - Estruturado', '#52c41a'))
+
             docDefinition.content.push(
                 generateScale({
                     parts: [
-                        { color: '#ff4d4f', label: 'Péssimo' },
-                        { color: '#ff6f61', label: 'Muito ruim' },
-                        { color: '#ff8c42', label: 'Ruim' },
-                        { color: '#faad14', label: 'Regular baixo' },
-                        { color: '#fadb14', label: 'Regular' },
-                        { color: '#d3f261', label: 'Regular alto' },
-                        { color: '#95de64', label: 'Bom' },
-                        { color: '#52c41a', label: 'Muito bom' },
-                        { color: '#36cfc9', label: 'Ótimo' },
-                        { color: '#1890ff', label: 'Excelente' }
-                    ]
+                        { color: '#ff4d4f', label: 'Nível I - Inicial' },
+                        { color: '#ff6f61', label: 'Nível II - Básico' },
+                        { color: '#ff8c42', label: 'Nível III - Emergente' },
+                        { color: '#faad14', label: 'Nível IV - Definido' },
+                        { color: '#fadb14', label: 'Nível V - Gerenciado' },
+                        { color: '#d3f261', label: 'Nível VI - Integrado' },
+                        { color: '#95de64', label: 'Nível VII - Padronizado' },
+                        { color: '#52c41a', label: 'Nível VIII - Estruturado' },
+                        { color: '#36cfc9', label: 'Nível IX - Monitorado' },
+                        { color: '#1890ff', label: 'Nível X - Otimizado' }
+                    ], hasLegend: true
                 })
-            );
-
+            );            
         }
-
 
         pdfMake.createPdf(docDefinition).download(`Relatório ${formatedReference}.pdf`);
 
