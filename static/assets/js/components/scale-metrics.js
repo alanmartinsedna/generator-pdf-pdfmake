@@ -1,26 +1,32 @@
 export function generateScale({
-        parts = [],
-        hasLegend
-    }) {
+    parts = [],
+    hasLegend = false
+}) {
 
     // 🔒 validação
     if (!Array.isArray(parts) || parts.length === 0) {
         console.error('Escala inválida: nenhuma parte informada');
-        return { text: 'Escala inválida' };
+
+        return {
+            text: 'Escala inválida'
+        };
     }
+
     // =========================
-    // 🔷 LINHA DAS CORES (SEM ESPAÇO)
+    // 🔷 LINHA DAS CORES
     // =========================
     const colorColumns = parts.map(part => ({
+
         width: '*',
 
         table: {
             widths: ['*'],
             heights: [3],
+
             body: [
                 [
                     {
-                        text: ' ', // 👈 necessário pra renderizar altura
+                        text: ' ',
                         fontSize: 1,
                         lineHeight: 1,
                         margin: [0, 0, 0, 0]
@@ -34,18 +40,36 @@ export function generateScale({
             hLineWidth: () => 0,
             vLineWidth: () => 0
         }
+
     }));
 
-    if(hasLegend){
-        // =========================
-        // 📌 CONFIGURAÇÃO DA LEGENDA
-        // =========================
+    // =========================
+    // 📦 STACK BASE
+    // =========================
+    const stack = [
+
+        // 🔷 ESCALA COLORIDA
+        {
+            columns: colorColumns,
+            columnGap: 0
+        }
+
+    ];
+
+    // =========================
+    // 📌 LEGENDA
+    // =========================
+    if (hasLegend) {
+
         const totalParts = parts.length;
 
+        // máximo de colunas
+        const maxColumns = 5;
+
         // quantidade de colunas reais
-        const columnsCount = totalParts <= 5
+        const columnsCount = totalParts <= maxColumns
             ? totalParts
-            : 5;
+            : maxColumns;
 
         // largura igualitária
         const columnWidth = `${100 / columnsCount}%`;
@@ -53,68 +77,80 @@ export function generateScale({
         // widths da tabela
         const legendWidths = Array(columnsCount).fill(columnWidth);
 
-        // =========================
-        // 📌 MONTA AS LINHAS
-        // =========================
+        // body da tabela
         const legendBody = [];
 
-        // 1 linha → 3 até 5 itens
-        if (totalParts <= 5) {
+        // =========================
+        // 🧱 FUNÇÃO DA CÉLULA
+        // =========================
+        function createLegendCell(part) {
+
+            return {
+
+                stack: [
+                    {
+                        columns: [
+
+                            // 🔴 BOLINHA
+                            {
+                                width: 12,
+
+                                canvas: [
+                                    {
+                                        type: 'rect',
+                                        x: 0,
+                                        y: 0,
+                                        w: 12,
+                                        h: 12,
+                                        r: 6,
+                                        color: part.color || '#cccccc'
+                                    }
+                                ],
+
+                                relativePosition: {
+                                    y: 0
+                                }
+                            },
+
+                            // 🔤 TEXTO
+                            {
+                                width: '*',
+
+                                text: part.label || '',
+
+                                fontSize: 10,
+
+                                margin: [5, 0, 0, 0]
+                            }
+
+                        ],
+
+                        columnGap: 0
+                    }
+                ],
+
+                margin: [0, 0, 0, 5]
+            };
+        }
+
+        // =========================
+        // 📌 1 LINHA (3 A 5)
+        // =========================
+        if (totalParts <= maxColumns) {
 
             const row = [];
 
             parts.forEach(part => {
-
-                row.push({
-                    stack: [
-                        {
-                            columns: [
-
-                                // 🔴 BOLINHA
-                                {
-                                    width: 12,
-
-                                    canvas: [
-                                        {
-                                            type: 'rect',
-                                            x: 0,
-                                            y: 0,
-                                            w: 12,
-                                            h: 12,
-                                            r: 6,
-                                            color: part.color
-                                        }
-                                    ],
-
-                                    relativePosition: {
-                                        y: 0
-                                    }
-                                },
-
-                                // 🔤 TEXTO
-                                {
-                                    width: '*',
-                                    text: part.label,
-                                    fontSize: 10,
-                                    margin: [5, 0, 0, 0]
-                                }
-
-                            ],
-
-                            columnGap: 0
-                        }
-                    ],
-
-                    margin: [0, 0, 0, 5]
-                });
-
+                row.push(createLegendCell(part));
             });
 
             legendBody.push(row);
 
         }
 
-        // 2 linhas → 6 até 10 itens
+        // =========================
+        // 📌 2 LINHAS (6 A 10)
+        // =========================
         else {
 
             const firstRow = [];
@@ -122,46 +158,13 @@ export function generateScale({
 
             parts.forEach((part, index) => {
 
-                const cell = {
-                    stack: [
-                        {
-                            columns: [
-                                // BOLINHA DA LEGENDA
-                                {
-                                    width: 12,
-                                    canvas: [
-                                        {
-                                            type: 'rect',
-                                            x: 0,
-                                            y: 0,
-                                            w: 12,
-                                            h: 12,
-                                            r: 6,
-                                            color: part.color
-                                        }
-                                    ],
-                                    relativePosition: {
-                                        y: 0
-                                    }
-                                },
-                                // TEXTO
-                                {
-                                    width: '*',
-                                    text: part.label,
-                                    fontSize: 10,
-                                    margin: [5, 0, 0, 0]
-                                }
-                            ],
-                            columnGap: 0
-                        }
-                    ],
-                    margin: [0, 0, 0, 5]
-                };
+                const cell = createLegendCell(part);
 
                 // primeira linha
-                if (index < 5) {
+                if (index < maxColumns) {
                     firstRow.push(cell);
                 }
+
                 // segunda linha
                 else {
                     secondRow.push(cell);
@@ -169,12 +172,13 @@ export function generateScale({
 
             });
 
-            // completa linhas faltantes
-            while (firstRow.length < 5) {
+            // completa primeira linha
+            while (firstRow.length < maxColumns) {
                 firstRow.push({});
             }
 
-            while (secondRow.length < 5) {
+            // completa segunda linha
+            while (secondRow.length < maxColumns) {
                 secondRow.push({});
             }
 
@@ -184,55 +188,32 @@ export function generateScale({
         }
 
         // =========================
-        // 📦 RETORNO FINAL
+        // 📦 TABELA DA LEGENDA
         // =========================
+        stack.push({
 
-        return {
+            table: {
+                widths: legendWidths,
+                body: legendBody
+            },
 
-            stack: [
+            layout: 'noBorders',
 
-                // ESCALA COLORIDA (SEM GAP)
-                {
-                    columns: colorColumns,
-                    columnGap: 0 // 👈 garante que não exista espaço
-                },
+            margin: [0, 5, 0, 0]
 
-                // tabela da legenda
-                {
-                    table: {
-                        widths: legendWidths,
-                        body: legendBody
-                    },
-                    layout: 'noBorders',
-                    margin: [0, 5, 0, 0]
-                }
+        });
 
-            ],
-
-            margin: [0, 10, 0, 10]
-        };
-
-    } else {
-        // =========================
-        // 📦 RETORNO FINAL
-        // =========================
-
-        return {
-
-            stack: [
-
-                // ESCALA COLORIDA (SEM GAP)
-                {
-                    columns: colorColumns,
-                    columnGap: 0 // 👈 garante que não exista espaço
-                }
-
-            ],
-
-            margin: [0, 10, 0, 10]
-        };
     }
+
+    // =========================
+    // 📦 RETORNO FINAL
+    // =========================
+    return {
+
+        stack,
+
+        margin: [0, 10, 0, 10]
+
+    };
+
 }
-
-
-
