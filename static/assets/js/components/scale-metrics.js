@@ -1,12 +1,11 @@
 export function generateScale({
-    parts = [],
-    hasLegend = false
-}) {
+        parts = [],
+        hasLegend = false
+    }) {
 
     // 🔒 validação
     if (!Array.isArray(parts) || parts.length === 0) {
         console.error('Escala inválida: nenhuma parte informada');
-
         return {
             text: 'Escala inválida'
         };
@@ -18,11 +17,9 @@ export function generateScale({
     const colorColumns = parts.map(part => ({
 
         width: '*',
-
         table: {
             widths: ['*'],
             heights: [3],
-
             body: [
                 [
                     {
@@ -34,13 +31,11 @@ export function generateScale({
                 ]
             ]
         },
-
         layout: {
             fillColor: () => part.color || '#cccccc',
             hLineWidth: () => 0,
             vLineWidth: () => 0
         }
-
     }));
 
     // =========================
@@ -61,22 +56,16 @@ export function generateScale({
     // =========================
     if (hasLegend) {
 
+        // quantidade total de partes da escala
         const totalParts = parts.length;
-
         // máximo de colunas
         const maxColumns = 5;
-
         // quantidade de colunas reais
-        const columnsCount = totalParts <= maxColumns
-            ? totalParts
-            : maxColumns;
-
+        const columnsCount = totalParts <= maxColumns ? totalParts : maxColumns;
         // largura igualitária
         const columnWidth = `${100 / columnsCount}%`;
-
         // widths da tabela
         const legendWidths = Array(columnsCount).fill(columnWidth);
-
         // body da tabela
         const legendBody = [];
 
@@ -86,15 +75,11 @@ export function generateScale({
         function createLegendCell(part) {
 
             return {
-
                 stack: [
                     {
                         columns: [
-
-                            // 🔴 BOLINHA
                             {
                                 width: 12,
-
                                 canvas: [
                                     {
                                         type: 'rect',
@@ -106,29 +91,20 @@ export function generateScale({
                                         color: part.color || '#cccccc'
                                     }
                                 ],
-
                                 relativePosition: {
                                     y: 0
                                 }
                             },
-
-                            // 🔤 TEXTO
                             {
                                 width: '*',
-
                                 text: part.label || '',
-
                                 fontSize: 10,
-
                                 margin: [5, 0, 0, 0]
                             }
-
                         ],
-
                         columnGap: 0
                     }
                 ],
-
                 margin: [0, 0, 0, 5]
             };
         }
@@ -146,12 +122,10 @@ export function generateScale({
 
             legendBody.push(row);
 
-        }
-
-        // =========================
-        // 📌 2 LINHAS (6 A 10)
-        // =========================
-        else {
+        } else {
+            // =========================
+            // 📌 2 LINHAS (6 A 10)
+            // =========================
 
             const firstRow = [];
             const secondRow = [];
@@ -163,10 +137,7 @@ export function generateScale({
                 // primeira linha
                 if (index < maxColumns) {
                     firstRow.push(cell);
-                }
-
-                // segunda linha
-                else {
+                } else {
                     secondRow.push(cell);
                 }
 
@@ -191,29 +162,20 @@ export function generateScale({
         // 📦 TABELA DA LEGENDA
         // =========================
         stack.push({
-
             table: {
                 widths: legendWidths,
                 body: legendBody
             },
-
             layout: 'noBorders',
-
             margin: [0, 5, 0, 0]
-
         });
-
     }
 
     // =========================
     // 📦 RETORNO FINAL
     // =========================
     return {
-
         stack,
-
         margin: [0, 10, 0, 10]
-
     };
-
 }
