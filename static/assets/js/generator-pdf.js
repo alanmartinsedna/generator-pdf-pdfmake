@@ -8,6 +8,7 @@ import { generateAderenceTableGroups } from "./components/generate-aderence-grou
 import { generateScoreCard }  from "./components/score-card.js"
 import { generateScale } from "./components/scale-metrics.js"
 import { generateTableAnswers } from "./components/generate-answers.js"
+import { getGlobalAverageAnswers } from "./components/get-average-global-answers.js"
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -229,7 +230,8 @@ export function generateFilePdf(dataJson) {
                 })
             ); 
 
-            docDefinition.content.push(generateTableAnswers(dataJson))
+            docDefinition.content.push(generateTableAnswers(getGlobalAverageAnswers(dataJson)))
+
 
         } else if (currentUrlPage.includes(ROUTES.DIAGNOSTIC.RECOMMENDATIONS) || currentUrlPage.includes(ROUTES.EVALUATION.RECOMMENDATIONS)) {
             // Página de recomendações detectada
