@@ -101,6 +101,6 @@ export function getGlobalAverageAnswers(answersData) {
                 groupQuestionsList,
             };
         });
-        console.log('[get-average-global-answers.js] public_groups = ', finalGlobalAnswers)
+
     return finalGlobalAnswers;
 }
