@@ -1062,7 +1062,7 @@
             {
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "445bbc38-df30-449e-af8c-dde99de05d55",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"Consigo concluir minhas tarefas dentro do horário normal de trabalho.","questionFinalAverage": 0.4},
                 {"questionName":"O ritmo de trabalho permite realizar as atividades com atenção e qualidade.","questionFinalAverage": 0.4},
@@ -1075,7 +1075,7 @@
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "6a3bc356-63f1-42c9-b872-b93ab034c336",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"Tenho liberdade para organizar a forma como realizo meu trabalho.","questionFinalAverage": 0.4},
                 {"questionName":"A equipe é ouvida antes de decisões que afetam o trabalho diário.","questionFinalAverage": 0.4},
@@ -1087,7 +1087,7 @@
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "e7ff994f-7289-4d0e-971c-3ae83a37d06e",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"Recebo orientações claras para realizar minhas atividades corretamente.","questionFinalAverage": 0.4},
                 {"questionName":"Tenho as ferramentas e informações necessárias para trabalhar.","questionFinalAverage": 0.4},
@@ -1099,7 +1099,7 @@
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "ec34fd4f-2559-4a6a-8394-5ba58e46b0c2",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"As pessoas mantêm respeito nas relações de trabalho.","questionFinalAverage": 0.4},
                 {"questionName":"Quando há desacordo, ele é tratado de forma profissional.","questionFinalAverage": 0.4},
@@ -1111,7 +1111,7 @@
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"Minhas responsabilidades estão de acordo com a função que exerço.","questionFinalAverage": 0.4},
                 {"questionName":"Sei com clareza quais critérios são usados para avaliar meu desempenho.","questionFinalAverage": 0.4},
@@ -1123,7 +1123,7 @@
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"Quando há mudanças, elas são comunicadas com clareza.","questionFinalAverage": 0.4},
                 {"questionName":"A empresa orienta como agir quando surgem situações novas.","questionFinalAverage": 0.4},
@@ -1135,7 +1135,7 @@
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.","questionFinalAverage": 0.4},
                 {"questionName":"As regras da empresa são aplicadas da mesma forma para todos.","questionFinalAverage": 0.4},
@@ -1147,7 +1147,7 @@
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
-              "finalAverage": 1.0,
+              "finalAverage": 0.4,
               "groupQuestionsList":[
                 {"questionName":"Sinto que posso relatar problemas ou preocupações sem medo de punição.","questionFinalAverage": 0.4},
                 {"questionName":"Conheço os canais formais da empresa para comunicar problemas.","questionFinalAverage": 0.4},
@@ -2910,7 +2910,7 @@
             {
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "0f75705d-a518-4ef2-b51e-ad24ae6803b7",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"Consigo concluir minhas tarefas dentro do horário normal de trabalho.","questionFinalAverage": 0.65},
                 {"questionName":"O ritmo de trabalho permite realizar as atividades com atenção e qualidade.","questionFinalAverage": 0.65},
@@ -2923,7 +2923,7 @@
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "90ece877-c118-4127-82a7-d36607c68339",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"Tenho liberdade para organizar a forma como realizo meu trabalho.","questionFinalAverage": 0.65},
                 {"questionName":"A equipe é ouvida antes de decisões que afetam o trabalho diário.","questionFinalAverage": 0.65},
@@ -2935,7 +2935,7 @@
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "5ad5408c-83f9-40c6-a8b0-e63a6f4b54a4",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"Recebo orientações claras para realizar minhas atividades corretamente.","questionFinalAverage": 0.65},
                 {"questionName":"Tenho as ferramentas e informações necessárias para trabalhar.","questionFinalAverage": 0.65},
@@ -2947,7 +2947,7 @@
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "2ede73c8-09f2-4b03-af5d-481f21a16e20",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"As pessoas mantêm respeito nas relações de trabalho.","questionFinalAverage": 0.65},
                 {"questionName":"Quando há desacordo, ele é tratado de forma profissional.","questionFinalAverage": 0.65},
@@ -2959,7 +2959,7 @@
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"Minhas responsabilidades estão de acordo com a função que exerço.","questionFinalAverage": 0.65},
                 {"questionName":"Sei com clareza quais critérios são usados para avaliar meu desempenho.","questionFinalAverage": 0.65},
@@ -2971,7 +2971,7 @@
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"Quando há mudanças, elas são comunicadas com clareza.","questionFinalAverage": 0.65},
                 {"questionName":"A empresa orienta como agir quando surgem situações novas.","questionFinalAverage": 0.65},
@@ -2983,7 +2983,7 @@
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.","questionFinalAverage": 0.65},
                 {"questionName":"As regras da empresa são aplicadas da mesma forma para todos.","questionFinalAverage": 0.65},
@@ -2995,7 +2995,7 @@
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
-              "finalAverage": 1.0,
+              "finalAverage": 0.65,
               "groupQuestionsList":[
                 {"questionName":"Sinto que posso relatar problemas ou preocupações sem medo de punição.","questionFinalAverage": 0.65},
                 {"questionName":"Conheço os canais formais da empresa para comunicar problemas.","questionFinalAverage": 0.65},
