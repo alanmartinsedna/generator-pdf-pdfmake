@@ -4,7 +4,7 @@
       "methodName": "Diagnóstico de Riscos Psicossociais",
       "economicGroup": "Grupo Agulhas Negras",
       "economicGroupId": "818c0e5f-e838-41db-b2f1-4b1282b2daf1",
-      "durationPeriod":{
+      "durationPeriod": {
         "startDate": "25/02/2026",
         "endDate": "07/11/2026"
       },
@@ -17,7 +17,7 @@
             "answered": 5,
             "notAnswered": 5,
             "avarageGroup": 1.0,
-            "historicUserTimelIne":[
+            "historicUserTimelIne": [
               {
                 "userName": "Ana Souza",
                 "userEmail": "ana.souza@email.com",
@@ -115,97 +115,220 @@
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "0f75705d-a518-4ef2-b51e-ad24ae6803b7",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"Consigo concluir minhas tarefas dentro do horário normal de trabalho.","questionFinalAverage": 1.0},
-                {"questionName":"O ritmo de trabalho permite realizar as atividades com atenção e qualidade.","questionFinalAverage": 1.0},
-                {"questionName":"As metas e prazos são definidos de forma clara antes do início das atividades.","questionFinalAverage": 1.0},
-                {"questionName":"Quando surgem novas tarefas, elas são explicadas antes de serem cobradas","questionFinalAverage": 1.0},
-                {"questionName":"O trabalho é dividido de maneira equilibrada entre as pessoas da equipe.","questionFinalAverage": 1.0},
-                {"questionName":"Preciso acelerar demais o ritmo para conseguir cumprir minhas tarefas.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Consigo concluir minhas tarefas dentro do horário normal de trabalho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "O ritmo de trabalho permite realizar as atividades com atenção e qualidade.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "As metas e prazos são definidos de forma clara antes do início das atividades.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Quando surgem novas tarefas, elas são explicadas antes de serem cobradas",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "O trabalho é dividido de maneira equilibrada entre as pessoas da equipe.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Preciso acelerar demais o ritmo para conseguir cumprir minhas tarefas.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             },
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "90ece877-c118-4127-82a7-d36607c68339",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"Tenho liberdade para organizar a forma como realizo meu trabalho.","questionFinalAverage": 1.0},
-                {"questionName":"A equipe é ouvida antes de decisões que afetam o trabalho diário.","questionFinalAverage": 1.0},
-                {"questionName":"Posso ajustar minha rotina quando surgem mudanças ou imprevistos.","questionFinalAverage": 1.0},
-                {"questionName":"Quando sugiro melhorias, recebo retorno sobre minha sugestão.","questionFinalAverage": 1.0},
-                {"questionName":"Tenho autonomia suficiente para resolver situações simples do dia a dia.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Tenho liberdade para organizar a forma como realizo meu trabalho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "A equipe é ouvida antes de decisões que afetam o trabalho diário.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Posso ajustar minha rotina quando surgem mudanças ou imprevistos.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Quando sugiro melhorias, recebo retorno sobre minha sugestão.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Tenho autonomia suficiente para resolver situações simples do dia a dia.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             },
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "5ad5408c-83f9-40c6-a8b0-e63a6f4b54a4",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"Recebo orientações claras para realizar minhas atividades corretamente.","questionFinalAverage": 1.0},
-                {"questionName":"Tenho as ferramentas e informações necessárias para trabalhar.","questionFinalAverage": 1.0},
-                {"questionName":"Quando enfrento dificuldades, posso contar com apoio da liderança.","questionFinalAverage": 1.0},
-                {"questionName":"Meus colegas colaboram quando o trabalho exige esforço conjunto.","questionFinalAverage": 1.0},
-                {"questionName":"Quando o mesmo problema acontece mais de uma vez, a empresa toma providências para resolver.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Recebo orientações claras para realizar minhas atividades corretamente.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Tenho as ferramentas e informações necessárias para trabalhar.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Quando enfrento dificuldades, posso contar com apoio da liderança.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Meus colegas colaboram quando o trabalho exige esforço conjunto.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Quando o mesmo problema acontece mais de uma vez, a empresa toma providências para resolver.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             },
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "2ede73c8-09f2-4b03-af5d-481f21a16e20",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"As pessoas mantêm respeito nas relações de trabalho.","questionFinalAverage": 1.0},
-                {"questionName":"Quando há desacordo, ele é tratado de forma profissional.","questionFinalAverage": 1.0},
-                {"questionName":"Conflitos entre colegas interferem no andamento do trabalho.","questionFinalAverage": 1.0},
-                {"questionName":"Existe um clima geral de respeito no ambiente de trabalho.","questionFinalAverage": 1.0},
-                {"questionName":"O ambiente de trabalho apresenta momentos frequentes de tensão.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "As pessoas mantêm respeito nas relações de trabalho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Quando há desacordo, ele é tratado de forma profissional.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Conflitos entre colegas interferem no andamento do trabalho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Existe um clima geral de respeito no ambiente de trabalho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "O ambiente de trabalho apresenta momentos frequentes de tensão.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             },
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"Minhas responsabilidades estão de acordo com a função que exerço.","questionFinalAverage": 1.0},
-                {"questionName":"Sei com clareza quais critérios são usados para avaliar meu desempenho.","questionFinalAverage": 1.0},
-                {"questionName":"Quando há mudança de prioridade, isso é explicado com clareza.","questionFinalAverage": 1.0},
-                {"questionName":"Recebo orientações diferentes ou contraditórias sobre o mesmo trabalho.","questionFinalAverage": 1.0},
-                {"questionName":"Sei exatamente o que se espera do meu trabalho no dia a dia.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Minhas responsabilidades estão de acordo com a função que exerço.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Sei com clareza quais critérios são usados para avaliar meu desempenho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Quando há mudança de prioridade, isso é explicado com clareza.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Recebo orientações diferentes ou contraditórias sobre o mesmo trabalho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Sei exatamente o que se espera do meu trabalho no dia a dia.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             },
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"Quando há mudanças, elas são comunicadas com clareza.","questionFinalAverage": 1.0},
-                {"questionName":"A empresa orienta como agir quando surgem situações novas.","questionFinalAverage": 1.0},
-                {"questionName":"As mudanças são planejadas antes de serem colocadas em prática.","questionFinalAverage": 1.0},
-                {"questionName":"Mudanças frequentes atrapalham a organização do trabalho.","questionFinalAverage": 1.0},
-                {"questionName":"O que é comunicado pela empresa combina com o que acontece na prática.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Quando há mudanças, elas são comunicadas com clareza.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "A empresa orienta como agir quando surgem situações novas.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "As mudanças são planejadas antes de serem colocadas em prática.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Mudanças frequentes atrapalham a organização do trabalho.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "O que é comunicado pela empresa combina com o que acontece na prática.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             },
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.","questionFinalAverage": 1.0},
-                {"questionName":"As regras da empresa são aplicadas da mesma forma para todos.","questionFinalAverage": 1.0},
-                {"questionName":"As decisões importantes são explicadas com clareza.","questionFinalAverage": 1.0},
-                {"questionName":"Percebo tratamento diferente entre pessoas em situações semelhantes.","questionFinalAverage": 1.0},
-                {"questionName":"O reconhecimento pelo trabalho realizado acontece de forma justa.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "As regras da empresa são aplicadas da mesma forma para todos.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "As decisões importantes são explicadas com clareza.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Percebo tratamento diferente entre pessoas em situações semelhantes.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "O reconhecimento pelo trabalho realizado acontece de forma justa.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             },
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
               "finalAverage": 1.0,
-              "groupQuestionsList":[
-                {"questionName":"Sinto que posso relatar problemas ou preocupações sem medo de punição.","questionFinalAverage": 1.0},
-                {"questionName":"Conheço os canais formais da empresa para comunicar problemas.","questionFinalAverage": 1.0},
-                {"questionName":"Quando um problema é relatado, a empresa analisa a situação com seriedade.","questionFinalAverage": 1.0},
-                {"questionName":"No dia a dia, as pessoas se sentem à vontade para falar sobre dificuldades","questionFinalAverage": 1.0},
-                {"questionName":"A liderança escuta e trata questionamentos de forma respeitosa.","questionFinalAverage": 1.0}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Sinto que posso relatar problemas ou preocupações sem medo de punição.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Conheço os canais formais da empresa para comunicar problemas.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "Quando um problema é relatado, a empresa analisa a situação com seriedade.",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "No dia a dia, as pessoas se sentem à vontade para falar sobre dificuldades",
+                  "questionFinalAverage": 1.0
+                },
+                {
+                  "questionName": "A liderança escuta e trata questionamentos de forma respeitosa.",
+                  "questionFinalAverage": 1.0
+                }
               ]
             }
           ]
@@ -217,7 +340,7 @@
             "totalPeople": 93,
             "answered": 29,
             "notAnswered": 64,
-            "avarageGroup": 1.0,
+            "avarageGroup": 0.4,
             "historicUserTimelIne": [
               {
                 "userName": "Usuario Respondente 1",
@@ -1063,97 +1186,220 @@
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "445bbc38-df30-449e-af8c-dde99de05d55",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"Consigo concluir minhas tarefas dentro do horário normal de trabalho.","questionFinalAverage": 0.4},
-                {"questionName":"O ritmo de trabalho permite realizar as atividades com atenção e qualidade.","questionFinalAverage": 0.4},
-                {"questionName":"As metas e prazos são definidos de forma clara antes do início das atividades.","questionFinalAverage": 0.4},
-                {"questionName":"Quando surgem novas tarefas, elas são explicadas antes de serem cobradas","questionFinalAverage": 0.4},
-                {"questionName":"O trabalho é dividido de maneira equilibrada entre as pessoas da equipe.","questionFinalAverage": 0.4},
-                {"questionName":"Preciso acelerar demais o ritmo para conseguir cumprir minhas tarefas.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Consigo concluir minhas tarefas dentro do horário normal de trabalho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "O ritmo de trabalho permite realizar as atividades com atenção e qualidade.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "As metas e prazos são definidos de forma clara antes do início das atividades.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Quando surgem novas tarefas, elas são explicadas antes de serem cobradas",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "O trabalho é dividido de maneira equilibrada entre as pessoas da equipe.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Preciso acelerar demais o ritmo para conseguir cumprir minhas tarefas.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             },
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "6a3bc356-63f1-42c9-b872-b93ab034c336",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"Tenho liberdade para organizar a forma como realizo meu trabalho.","questionFinalAverage": 0.4},
-                {"questionName":"A equipe é ouvida antes de decisões que afetam o trabalho diário.","questionFinalAverage": 0.4},
-                {"questionName":"Posso ajustar minha rotina quando surgem mudanças ou imprevistos.","questionFinalAverage": 0.4},
-                {"questionName":"Quando sugiro melhorias, recebo retorno sobre minha sugestão.","questionFinalAverage": 0.4},
-                {"questionName":"Tenho autonomia suficiente para resolver situações simples do dia a dia.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Tenho liberdade para organizar a forma como realizo meu trabalho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "A equipe é ouvida antes de decisões que afetam o trabalho diário.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Posso ajustar minha rotina quando surgem mudanças ou imprevistos.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Quando sugiro melhorias, recebo retorno sobre minha sugestão.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Tenho autonomia suficiente para resolver situações simples do dia a dia.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             },
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "e7ff994f-7289-4d0e-971c-3ae83a37d06e",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"Recebo orientações claras para realizar minhas atividades corretamente.","questionFinalAverage": 0.4},
-                {"questionName":"Tenho as ferramentas e informações necessárias para trabalhar.","questionFinalAverage": 0.4},
-                {"questionName":"Quando enfrento dificuldades, posso contar com apoio da liderança.","questionFinalAverage": 0.4},
-                {"questionName":"Meus colegas colaboram quando o trabalho exige esforço conjunto.","questionFinalAverage": 0.4},
-                {"questionName":"Quando o mesmo problema acontece mais de uma vez, a empresa toma providências para resolver.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Recebo orientações claras para realizar minhas atividades corretamente.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Tenho as ferramentas e informações necessárias para trabalhar.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Quando enfrento dificuldades, posso contar com apoio da liderança.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Meus colegas colaboram quando o trabalho exige esforço conjunto.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Quando o mesmo problema acontece mais de uma vez, a empresa toma providências para resolver.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             },
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "ec34fd4f-2559-4a6a-8394-5ba58e46b0c2",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"As pessoas mantêm respeito nas relações de trabalho.","questionFinalAverage": 0.4},
-                {"questionName":"Quando há desacordo, ele é tratado de forma profissional.","questionFinalAverage": 0.4},
-                {"questionName":"Conflitos entre colegas interferem no andamento do trabalho.","questionFinalAverage": 0.4},
-                {"questionName":"Existe um clima geral de respeito no ambiente de trabalho.","questionFinalAverage": 0.4},
-                {"questionName":"O ambiente de trabalho apresenta momentos frequentes de tensão.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "As pessoas mantêm respeito nas relações de trabalho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Quando há desacordo, ele é tratado de forma profissional.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Conflitos entre colegas interferem no andamento do trabalho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Existe um clima geral de respeito no ambiente de trabalho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "O ambiente de trabalho apresenta momentos frequentes de tensão.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             },
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"Minhas responsabilidades estão de acordo com a função que exerço.","questionFinalAverage": 0.4},
-                {"questionName":"Sei com clareza quais critérios são usados para avaliar meu desempenho.","questionFinalAverage": 0.4},
-                {"questionName":"Quando há mudança de prioridade, isso é explicado com clareza.","questionFinalAverage": 0.4},
-                {"questionName":"Recebo orientações diferentes ou contraditórias sobre o mesmo trabalho.","questionFinalAverage": 0.4},
-                {"questionName":"Sei exatamente o que se espera do meu trabalho no dia a dia.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Minhas responsabilidades estão de acordo com a função que exerço.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Sei com clareza quais critérios são usados para avaliar meu desempenho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Quando há mudança de prioridade, isso é explicado com clareza.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Recebo orientações diferentes ou contraditórias sobre o mesmo trabalho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Sei exatamente o que se espera do meu trabalho no dia a dia.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             },
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"Quando há mudanças, elas são comunicadas com clareza.","questionFinalAverage": 0.4},
-                {"questionName":"A empresa orienta como agir quando surgem situações novas.","questionFinalAverage": 0.4},
-                {"questionName":"As mudanças são planejadas antes de serem colocadas em prática.","questionFinalAverage": 0.4},
-                {"questionName":"Mudanças frequentes atrapalham a organização do trabalho.","questionFinalAverage": 0.4},
-                {"questionName":"O que é comunicado pela empresa combina com o que acontece na prática.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Quando há mudanças, elas são comunicadas com clareza.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "A empresa orienta como agir quando surgem situações novas.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "As mudanças são planejadas antes de serem colocadas em prática.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Mudanças frequentes atrapalham a organização do trabalho.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "O que é comunicado pela empresa combina com o que acontece na prática.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             },
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.","questionFinalAverage": 0.4},
-                {"questionName":"As regras da empresa são aplicadas da mesma forma para todos.","questionFinalAverage": 0.4},
-                {"questionName":"As decisões importantes são explicadas com clareza.","questionFinalAverage": 0.4},
-                {"questionName":"Percebo tratamento diferente entre pessoas em situações semelhantes.","questionFinalAverage": 0.4},
-                {"questionName":"O reconhecimento pelo trabalho realizado acontece de forma justa.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "As regras da empresa são aplicadas da mesma forma para todos.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "As decisões importantes são explicadas com clareza.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Percebo tratamento diferente entre pessoas em situações semelhantes.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "O reconhecimento pelo trabalho realizado acontece de forma justa.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             },
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
               "finalAverage": 0.4,
-              "groupQuestionsList":[
-                {"questionName":"Sinto que posso relatar problemas ou preocupações sem medo de punição.","questionFinalAverage": 0.4},
-                {"questionName":"Conheço os canais formais da empresa para comunicar problemas.","questionFinalAverage": 0.4},
-                {"questionName":"Quando um problema é relatado, a empresa analisa a situação com seriedade.","questionFinalAverage": 0.4},
-                {"questionName":"No dia a dia, as pessoas se sentem à vontade para falar sobre dificuldades","questionFinalAverage": 0.4},
-                {"questionName":"A liderança escuta e trata questionamentos de forma respeitosa.","questionFinalAverage": 0.4}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Sinto que posso relatar problemas ou preocupações sem medo de punição.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Conheço os canais formais da empresa para comunicar problemas.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "Quando um problema é relatado, a empresa analisa a situação com seriedade.",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "No dia a dia, as pessoas se sentem à vontade para falar sobre dificuldades",
+                  "questionFinalAverage": 0.4
+                },
+                {
+                  "questionName": "A liderança escuta e trata questionamentos de forma respeitosa.",
+                  "questionFinalAverage": 0.4
+                }
               ]
             }
           ]
@@ -1165,7 +1411,7 @@
             "totalPeople": 193,
             "answered": 140,
             "notAnswered": 53,
-            "avarageGroup": 1.0,
+            "avarageGroup": 0.65,
             "historicUserTimelIne": [
               {
                 "userName": "Usuario Respondente 1",
@@ -2911,97 +3157,220 @@
               "groupNameAnswer": "1. ORGANIZAÇÃO DAS DEMANDAS",
               "groupNameId": "0f75705d-a518-4ef2-b51e-ad24ae6803b7",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"Consigo concluir minhas tarefas dentro do horário normal de trabalho.","questionFinalAverage": 0.65},
-                {"questionName":"O ritmo de trabalho permite realizar as atividades com atenção e qualidade.","questionFinalAverage": 0.65},
-                {"questionName":"As metas e prazos são definidos de forma clara antes do início das atividades.","questionFinalAverage": 0.65},
-                {"questionName":"Quando surgem novas tarefas, elas são explicadas antes de serem cobradas","questionFinalAverage": 0.65},
-                {"questionName":"O trabalho é dividido de maneira equilibrada entre as pessoas da equipe.","questionFinalAverage": 0.65},
-                {"questionName":"Preciso acelerar demais o ritmo para conseguir cumprir minhas tarefas.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Consigo concluir minhas tarefas dentro do horário normal de trabalho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "O ritmo de trabalho permite realizar as atividades com atenção e qualidade.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "As metas e prazos são definidos de forma clara antes do início das atividades.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Quando surgem novas tarefas, elas são explicadas antes de serem cobradas",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "O trabalho é dividido de maneira equilibrada entre as pessoas da equipe.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Preciso acelerar demais o ritmo para conseguir cumprir minhas tarefas.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             },
             {
               "groupNameAnswer": "2. AUTONOMIA E CAPACIDADE DE EXECUÇÃO",
               "groupNameId": "90ece877-c118-4127-82a7-d36607c68339",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"Tenho liberdade para organizar a forma como realizo meu trabalho.","questionFinalAverage": 0.65},
-                {"questionName":"A equipe é ouvida antes de decisões que afetam o trabalho diário.","questionFinalAverage": 0.65},
-                {"questionName":"Posso ajustar minha rotina quando surgem mudanças ou imprevistos.","questionFinalAverage": 0.65},
-                {"questionName":"Quando sugiro melhorias, recebo retorno sobre minha sugestão.","questionFinalAverage": 0.65},
-                {"questionName":"Tenho autonomia suficiente para resolver situações simples do dia a dia.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Tenho liberdade para organizar a forma como realizo meu trabalho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "A equipe é ouvida antes de decisões que afetam o trabalho diário.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Posso ajustar minha rotina quando surgem mudanças ou imprevistos.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Quando sugiro melhorias, recebo retorno sobre minha sugestão.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Tenho autonomia suficiente para resolver situações simples do dia a dia.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             },
             {
               "groupNameAnswer": "3. SUPORTE E RECURSOS",
               "groupNameId": "5ad5408c-83f9-40c6-a8b0-e63a6f4b54a4",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"Recebo orientações claras para realizar minhas atividades corretamente.","questionFinalAverage": 0.65},
-                {"questionName":"Tenho as ferramentas e informações necessárias para trabalhar.","questionFinalAverage": 0.65},
-                {"questionName":"Quando enfrento dificuldades, posso contar com apoio da liderança.","questionFinalAverage": 0.65},
-                {"questionName":"Meus colegas colaboram quando o trabalho exige esforço conjunto.","questionFinalAverage": 0.65},
-                {"questionName":"Quando o mesmo problema acontece mais de uma vez, a empresa toma providências para resolver.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Recebo orientações claras para realizar minhas atividades corretamente.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Tenho as ferramentas e informações necessárias para trabalhar.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Quando enfrento dificuldades, posso contar com apoio da liderança.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Meus colegas colaboram quando o trabalho exige esforço conjunto.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Quando o mesmo problema acontece mais de uma vez, a empresa toma providências para resolver.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             },
             {
               "groupNameAnswer": "4. RELAÇÕES PROFISSIONAIS",
               "groupNameId": "2ede73c8-09f2-4b03-af5d-481f21a16e20",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"As pessoas mantêm respeito nas relações de trabalho.","questionFinalAverage": 0.65},
-                {"questionName":"Quando há desacordo, ele é tratado de forma profissional.","questionFinalAverage": 0.65},
-                {"questionName":"Conflitos entre colegas interferem no andamento do trabalho.","questionFinalAverage": 0.65},
-                {"questionName":"Existe um clima geral de respeito no ambiente de trabalho.","questionFinalAverage": 0.65},
-                {"questionName":"O ambiente de trabalho apresenta momentos frequentes de tensão.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "As pessoas mantêm respeito nas relações de trabalho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Quando há desacordo, ele é tratado de forma profissional.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Conflitos entre colegas interferem no andamento do trabalho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Existe um clima geral de respeito no ambiente de trabalho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "O ambiente de trabalho apresenta momentos frequentes de tensão.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             },
             {
               "groupNameAnswer": "5. CLAREZA E ESTRUTURA DE PAPÉIS",
               "groupNameId": "11801cd6-7b0e-48e9-88b1-2fdd6ed2dd9c",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"Minhas responsabilidades estão de acordo com a função que exerço.","questionFinalAverage": 0.65},
-                {"questionName":"Sei com clareza quais critérios são usados para avaliar meu desempenho.","questionFinalAverage": 0.65},
-                {"questionName":"Quando há mudança de prioridade, isso é explicado com clareza.","questionFinalAverage": 0.65},
-                {"questionName":"Recebo orientações diferentes ou contraditórias sobre o mesmo trabalho.","questionFinalAverage": 0.65},
-                {"questionName":"Sei exatamente o que se espera do meu trabalho no dia a dia.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Minhas responsabilidades estão de acordo com a função que exerço.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Sei com clareza quais critérios são usados para avaliar meu desempenho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Quando há mudança de prioridade, isso é explicado com clareza.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Recebo orientações diferentes ou contraditórias sobre o mesmo trabalho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Sei exatamente o que se espera do meu trabalho no dia a dia.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             },
             {
               "groupNameAnswer": "6. GESTÃO DE MUDANÇAS",
               "groupNameId": "58fadb17-a9db-43ac-815e-4d9cfdd67a2f",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"Quando há mudanças, elas são comunicadas com clareza.","questionFinalAverage": 0.65},
-                {"questionName":"A empresa orienta como agir quando surgem situações novas.","questionFinalAverage": 0.65},
-                {"questionName":"As mudanças são planejadas antes de serem colocadas em prática.","questionFinalAverage": 0.65},
-                {"questionName":"Mudanças frequentes atrapalham a organização do trabalho.","questionFinalAverage": 0.65},
-                {"questionName":"O que é comunicado pela empresa combina com o que acontece na prática.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Quando há mudanças, elas são comunicadas com clareza.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "A empresa orienta como agir quando surgem situações novas.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "As mudanças são planejadas antes de serem colocadas em prática.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Mudanças frequentes atrapalham a organização do trabalho.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "O que é comunicado pela empresa combina com o que acontece na prática.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             },
             {
               "groupNameAnswer": "7. JUSTICA E COERÊNCIA ORGANIZACIONAL",
               "groupNameId": "c3e9299c-3fc6-42c0-b1d6-d16ebb2f6520",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.","questionFinalAverage": 0.65},
-                {"questionName":"As regras da empresa são aplicadas da mesma forma para todos.","questionFinalAverage": 0.65},
-                {"questionName":"As decisões importantes são explicadas com clareza.","questionFinalAverage": 0.65},
-                {"questionName":"Percebo tratamento diferente entre pessoas em situações semelhantes.","questionFinalAverage": 0.65},
-                {"questionName":"O reconhecimento pelo trabalho realizado acontece de forma justa.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "A liderança toma decisões seguindo regras claras e tratando as pessoas com justiça.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "As regras da empresa são aplicadas da mesma forma para todos.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "As decisões importantes são explicadas com clareza.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Percebo tratamento diferente entre pessoas em situações semelhantes.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "O reconhecimento pelo trabalho realizado acontece de forma justa.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             },
             {
               "groupNameAnswer": "8. SEGURANÇA ORGANIZACIONAL E PSICOLÓGICA",
               "groupNameId": "97f40760-bbfc-45ab-a109-3a4fc8611ba2",
               "finalAverage": 0.65,
-              "groupQuestionsList":[
-                {"questionName":"Sinto que posso relatar problemas ou preocupações sem medo de punição.","questionFinalAverage": 0.65},
-                {"questionName":"Conheço os canais formais da empresa para comunicar problemas.","questionFinalAverage": 0.65},
-                {"questionName":"Quando um problema é relatado, a empresa analisa a situação com seriedade.","questionFinalAverage": 0.65},
-                {"questionName":"No dia a dia, as pessoas se sentem à vontade para falar sobre dificuldades","questionFinalAverage": 0.65},
-                {"questionName":"A liderança escuta e trata questionamentos de forma respeitosa.","questionFinalAverage": 0.65}
+              "groupQuestionsList": [
+                {
+                  "questionName": "Sinto que posso relatar problemas ou preocupações sem medo de punição.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Conheço os canais formais da empresa para comunicar problemas.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "Quando um problema é relatado, a empresa analisa a situação com seriedade.",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "No dia a dia, as pessoas se sentem à vontade para falar sobre dificuldades",
+                  "questionFinalAverage": 0.65
+                },
+                {
+                  "questionName": "A liderança escuta e trata questionamentos de forma respeitosa.",
+                  "questionFinalAverage": 0.65
+                }
               ]
             }
           ]
