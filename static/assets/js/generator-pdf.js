@@ -9,6 +9,7 @@ import { generateScoreCard }  from "./components/score-card.js"
 import { generateScale } from "./components/scale-metrics.js"
 import { generateTableAnswers } from "./components/generate-answers.js"
 import { getGlobalAverageAnswers } from "./components/get-average-global-answers.js"
+import { getRecommendation } from "./components/get-recomendation.js"
 
 export function generateFilePdf(dataJson) {
     console.log("[GENERATOR-PDF.JS] Início do script");
@@ -256,7 +257,9 @@ export function generateFilePdf(dataJson) {
                         { color: '#1890ff', label: 'Nível X - Otimizado' }
                     ], hasLegend: true
                 })
-            );            
+            ); 
+            
+            docDefinition.content.push(getRecommendation(dataJson))
         }
 
         pdfMake.createPdf(docDefinition).download(`Relatório ${formatedReference}.pdf`);
