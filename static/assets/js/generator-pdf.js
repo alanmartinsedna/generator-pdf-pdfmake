@@ -54,8 +54,8 @@ export function generateFilePdf(dataJson) {
     const PAGE_MARGIM_LEFT = 30; // margem esquerda para evitar sobreposição com o header
     const PAGE_MARGIM_RIGHT = 30; // margem direita para evitar sobreposição com o header
 
-    // const pageOrientationType = 'landscape'
-    const pageOrientationType = 'portrait'
+    const pageOrientationType = 'landscape'
+    // const pageOrientationType = 'portrait'
 
     const docDefinition = {
         pageSize: 'A4',
@@ -158,6 +158,107 @@ export function generateFilePdf(dataJson) {
                 fontSize: 8,
                 bold: false,
                 color: '#000000'
+            },
+            heading1: {
+                fontSize: 24,
+                lineHeight:1.2,
+                bold: true,
+                alignment:'left',
+                color: '#000000',
+                margin:[0,6,0,12]
+            },
+            heading2: {
+                fontSize: 18,
+                lineHeight:1.2,
+                bold: true,
+                alignment:'left',
+                color: '#000000',
+                margin:[0,6,0,9]
+            },
+            heading3: {
+                fontSize: 14,
+                lineHeight:1.2,
+                bold: true,
+                alignment:'left',
+                color: '#000000',
+                margin:[0,5,0,7]
+            },
+            heading4: {
+                fontSize: 12,
+                lineHeight:1.2,
+                bold: true,
+                alignment:'left',
+                color: '#000000',
+                margin:[0,4,0,6]
+            },
+            heading5: {
+                fontSize: 10,
+                lineHeight:1.2,
+                bold: true,
+                alignment:'left',
+                color: '#000000',
+                margin:[0,4,0,6]
+            },
+            heading6: {
+                fontSize: 9,
+                lineHeight:1.2,
+                bold: true,
+                alignment:'left',
+                color: '#000000',
+                margin:[0,3,0,4]
+            },
+            bodyText: {
+                leadingIndent: 20,
+                fontSize: 10,
+                lineHeight:1.3,
+                bold: false,
+                alignment:'justify',
+                color: '#000000',
+                margin:[20,4,0,4]
+            },
+            smallText: {
+                fontSize: 9,
+                lineHeight: 1.3,
+                bold: false,
+                italics: false,
+                alignment: 'left',
+                margin: [0, 0, 0, 6]
+            
+            },
+            caption: {
+                leadingIndent: 0,
+                fontSize: 8,
+                lineHeight: 1.2,
+                bold: false,
+                italics: true,
+                alignment: 'center',
+                margin: [0, 4, 0, 10]
+            },
+            italic: {
+                italics: true
+            },
+            bold: {
+                bold: true
+            },
+            unorderedList: {
+                fontSize: 10,
+                bold: false,
+                lineHeight: 1.4,
+                margin: [0, 2, 0, 6]
+            },
+            orderedList: {
+                fontSize: 10,
+                bold: false,
+                lineHeight: 1.4,
+                margin: [0, 2, 0, 6]
+            },
+            underline: {
+                decoration: 'underline',
+                decorationColor: '#000000'
+            },
+            lineThrough: {
+                decoration: 'lineThrough',
+                decorationColor: '#000000'
             }
         }
     };
