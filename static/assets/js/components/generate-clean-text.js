@@ -1,7 +1,7 @@
-export function generateCleanText(data) {
+export function generateCleanText(data, internalBody) {
 
-    console.log('[GENERATE-CLEAN-TEXT.JS] INÍCIO DA FUNÇÃO')
-    // console.log('[GENERATE-CLEAN-TEXT.JS] tipo data = ',typeof data)
+    console.log('[GENERATE-CLEAN-TEXT.JS] INÍCIO DA FUNÇÃO');
+
     // =========================================
     // 🔒 VALIDAÇÃO
     // =========================================
@@ -11,44 +11,52 @@ export function generateCleanText(data) {
     }
 
     // =========================================
-    // 📌 ARRAY FINAL
-    // =========================================
-    const content = [];
-
-    // =========================================
     // 📌 REMOVE QUEBRAS DESNECESSÁRIAS
     // =========================================
     let html = data
         .replace(/\n/g, '')
         .replace(/\r/g, '')
         .replace(/\t/g, '');
-    
-        
+
     // =========================================
     // 📌 CRIA PARSER HTML
     // =========================================
     const parser = new DOMParser();
-    
+
     const doc = parser.parseFromString(
         html,
         'text/html'
     );
-    
+
+    // =========================================
+    // 📌 ARRAY FINAL
+    // =========================================
+    //
+    // ARRAY<OBJECT>
+    //
+    // [
+    //   {...},
+    //   {...},
+    //   {...}
+    // ]
+    //
+    // =========================================
+
     // =========================================
     // 📌 FUNÇÃO PARA LIMPAR TEXTO
     // =========================================
     function cleanText(text) {
-        
+
         if (!text) {
             return '';
         }
-        
+
         return text
-        .replace(/&nbsp;/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
+            .replace(/&nbsp;/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
     }
-    
+
     // =========================================
     // 📌 PROCESSA ESTILOS INLINE
     // =========================================
@@ -63,6 +71,7 @@ export function generateCleanText(data) {
             element.querySelector('strong') ||
             element.querySelector('b')
         ) {
+
             styles.push('bold');
         }
 
@@ -73,6 +82,7 @@ export function generateCleanText(data) {
             element.querySelector('em') ||
             element.querySelector('i')
         ) {
+
             styles.push('italic');
         }
 
@@ -82,6 +92,7 @@ export function generateCleanText(data) {
         if (
             element.querySelector('u')
         ) {
+
             styles.push('underline');
         }
 
@@ -92,6 +103,7 @@ export function generateCleanText(data) {
             element.querySelector('s') ||
             element.querySelector('strike')
         ) {
+
             styles.push('lineThrough');
         }
 
@@ -102,75 +114,100 @@ export function generateCleanText(data) {
     // 📌 PROCESSA ELEMENTOS
     // =========================================
     function processElement(element) {
-        // Identifica o tipo da tag html
-        const tagName = element.tagName.toLowerCase();
-        
-        // Retorna o texto limpo
-        const text = cleanText(element.textContent);
 
-        // ignora vazio
+        // =====================================
+        // TAG HTML
+        // =====================================
+        const tagName =
+            element.tagName.toLowerCase();
+
+        // =====================================
+        // TEXTO LIMPO
+        // =====================================
+        const text =
+            cleanText(element.textContent);
+
+        // =====================================
+        // IGNORA VAZIO
+        // =====================================
         if (!text) {
             return;
         }
 
         // =====================================
-        // HEADINGS
+        // H1
         // =====================================
         if (tagName === 'h1') {
 
-            content.push({
+            internalBody.push([{
                 text,
                 style: ['heading1']
-            });
+            }]);
+
             return;
         }
 
+        // =====================================
+        // H2
+        // =====================================
         if (tagName === 'h2') {
 
-            content.push({
+            internalBody.push([{
                 text,
                 style: ['heading2']
-            });
+            }]);
 
             return;
         }
 
+        // =====================================
+        // H3
+        // =====================================
         if (tagName === 'h3') {
 
-            content.push({
+            internalBody.push([{
                 text,
                 style: ['heading3']
-            });
+            }]);
 
             return;
         }
 
+        // =====================================
+        // H4
+        // =====================================
         if (tagName === 'h4') {
 
-            content.push({
+            internalBody.push([{
                 text,
                 style: ['heading4']
-            });
+            }]);
 
             return;
         }
 
+        // =====================================
+        // H5
+        // =====================================
         if (tagName === 'h5') {
 
-            content.push({
+            internalBody.push([{
                 text,
                 style: ['heading5']
-            });
+            }]);
 
             return;
         }
 
+        // =====================================
+        // H6
+        // =====================================
         if (tagName === 'h6') {
 
-            content.push({
+            internalBody.push([{
                 text,
                 style: ['heading6']
-            });
+            }]);
 
             return;
         }
@@ -182,13 +219,15 @@ export function generateCleanText(data) {
 
             const items = [];
 
-            element.querySelectorAll('li')
+            element
+                .querySelectorAll('li')
                 .forEach(li => {
 
                     const itemText =
                         cleanText(li.textContent);
 
                     if (itemText) {
+
                         items.push(itemText);
                     }
 
@@ -196,15 +235,11 @@ export function generateCleanText(data) {
 
             if (items.length > 0) {
 
-                content.push({
-
+                internalBody.push([{
                     ul: items,
-
                     style: ['unorderedList'],
-
                     markerColor: '#000000'
-
-                });
+                }]);
             }
 
             return;
@@ -217,13 +252,15 @@ export function generateCleanText(data) {
 
             const items = [];
 
-            element.querySelectorAll('li')
+            element
+                .querySelectorAll('li')
                 .forEach(li => {
 
                     const itemText =
                         cleanText(li.textContent);
 
                     if (itemText) {
+
                         items.push(itemText);
                     }
 
@@ -231,15 +268,11 @@ export function generateCleanText(data) {
 
             if (items.length > 0) {
 
-                content.push({
-
+                internalBody.push([{
                     ol: items,
-
                     style: ['orderedList'],
-
                     markerColor: '#000000'
-
-                });
+                }]);
             }
 
             return;
@@ -256,10 +289,10 @@ export function generateCleanText(data) {
             const styles =
                 processInlineStyles(element);
 
-            content.push({
+            internalBody.push([{
                 text,
                 style: styles
-            });
+            }]);
 
             return;
         }
@@ -279,9 +312,14 @@ export function generateCleanText(data) {
     // =========================================
     // 📦 RETORNO FINAL
     // =========================================
+    console.log(
+        '[GENERATE-CLEAN-TEXT.JS] FIM DA FUNÇÃO dados internalBody = ',
+        JSON.stringify(internalBody, null, 2)
+    );
 
-    console.log('[GENERATE-CLEAN-TEXT.JS] FIM DA FUNÇÃO dados content = ', JSON.stringify(content, null, 2))
-    console.log('[GENERATE-CLEAN-TEXT.JS] FIM DA FUNÇÃO')
-    return content;
-    
+    console.log(
+        '[GENERATE-CLEAN-TEXT.JS] FIM DA FUNÇÃO'
+    );
+
+    return internalBody;
 }
