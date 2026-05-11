@@ -4,7 +4,6 @@ export function getRecommendation(data) {
 
     const publicGroups = data.reportData[0].public_groups
 
-
     let internalBody = []
 
     const tableRecommendations = {
@@ -59,10 +58,6 @@ export function getRecommendation(data) {
             let grouperName = questionGroup.groupNameAnswer
             let questionGrouperAverage = questionGroup.finalAverage
             let formatedAverage = (questionGrouperAverage * 100)
-
-            console.log(`[GET-RECOMMENDATION.JS] index = ${index}`)
-            console.log(`[GET-RECOMMENDATION.JS] grouperName = ${grouperName} / questionGrouperAverage ${formatedAverage}`)
-
             let groupListQuestion = questionGroup.groupQuestionsList
 
             internalBody.push([
@@ -77,7 +72,6 @@ export function getRecommendation(data) {
             ])
             
             // Insere a recomendação para o agrupador
-
             const recommendationList = data.dataRecommendation
             const recommendationItem = recommendationList[index]
             const nameLabel = recommendationList[index].label
@@ -87,7 +81,7 @@ export function getRecommendation(data) {
                     recommendation => formatedAverage >= recommendation.start && formatedAverage <= recommendation.end
                 )
 
-            console.log('filteredRecommendation = ', filteredRecommendation)
+            const selectedRecommendation = filteredRecommendation.recommendations
 
             for (const itemRecommendation of recommendationGrouperList) {
                 const concept = itemRecommendation.concept
@@ -116,7 +110,7 @@ export function getRecommendation(data) {
                         }
                     ])
 
-                    internalBody.push(generateCleanText())
+                    generateCleanText(selectedRecommendation, internalBody)
 
                 }
             }
