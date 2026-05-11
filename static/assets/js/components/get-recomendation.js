@@ -1,3 +1,5 @@
+import { generateCleanText } from "./generate-clean-text.js"
+
 export function getRecommendation(data) {
 
     const publicGroups = data.reportData[0].public_groups
@@ -12,8 +14,8 @@ export function getRecommendation(data) {
             body: internalBody
         },
         layout: {
-            hLineWidth: () => 1,
-            vLineWidth: () => 1,
+            hLineWidth: () => 0,
+            vLineWidth: () => 0,
             hLineColor: () => '#000000',
             vLineColor: () => '#000000',
             fillColor: (rowIndex) =>
@@ -63,8 +65,6 @@ export function getRecommendation(data) {
 
             let groupListQuestion = questionGroup.groupQuestionsList
 
-            // console.log(`[GET-RECOMMENDATION.JS] grouperName = ${grouperName} / questionGrouperAverage ${questionGrouperAverage}`)
-            // Insere o nome do agrupador de cada bloco de perguntas
             internalBody.push([
                 {
                     text: grouperName,
@@ -82,12 +82,13 @@ export function getRecommendation(data) {
             const recommendationItem = recommendationList[index]
             const nameLabel = recommendationList[index].label
             const recommendationGrouperList = recommendationList[index].meta.recommendations
-            console.log('nameLabel = ', nameLabel)
-            // console.log('recommendationGrouperList = ', recommendationGrouperList)
-            
-            // const filteredRecommendation = recommendationGrouperList.filter(recommentation => formatedAverage >= recommentation.start && formatedAverage <= recommentation.end)
-            
-            // console.log('filteredRecommendation = ', filteredRecommendation)
+
+            const filteredRecommendation = recommendationGrouperList.find(
+                    recommendation => formatedAverage >= recommendation.start && formatedAverage <= recommendation.end
+                )
+
+            console.log('filteredRecommendation = ', filteredRecommendation)
+
             for (const itemRecommendation of recommendationGrouperList) {
                 const concept = itemRecommendation.concept
                 const start = itemRecommendation.start
@@ -95,14 +96,6 @@ export function getRecommendation(data) {
                 const recommendationSelected = itemRecommendation.recommendations
 
                 let validation = null;
-
-                const filteredRecommendation = recommendationGrouperList.find(
-                    recommendation =>
-                        formatedAverage >= recommendation.start &&
-                        formatedAverage <= recommendation.end
-                )
-
-                console.log('filteredRecommendation = ', filteredRecommendation)
 
                 if (start === 0) { 
                     validation = formatedAverage >= start && formatedAverage <= end
@@ -122,15 +115,11 @@ export function getRecommendation(data) {
                             margin:[20,0,0,0]
                         }
                     ])
+
+                    internalBody.push(generateCleanText())
+
                 }
-
-                
-
-                
             }
-
-
-
 
             // Insere as perguntas de cada bloco
             for (const question of groupListQuestion) {
@@ -149,8 +138,6 @@ export function getRecommendation(data) {
             }
         }
     }
-
-    
 
     return tableRecommendations
 }
