@@ -1,301 +1,349 @@
-export function generateCleanText(data, internalBody) {
-
-    // =========================================
-    // 🔒 VALIDAÇÃO
-    // =========================================
+﻿export function generateCleanText(data, internalBody) {
     if (!data || typeof data !== 'string') {
-
         return [];
     }
 
-    // =========================================
-    // 📌 REMOVE QUEBRAS DESNECESSÁRIAS
-    // =========================================
-    let html = data
-        .replace(/\n/g, '')
-        .replace(/\r/g, '')
-        .replace(/\t/g, '');
+    const output = Array.isArray(internalBody) ? internalBody : [];
 
-    // =========================================
-    // 📌 CRIA PARSER HTML
-    // =========================================
-    const parser = new DOMParser();
+    function parseHtml(html) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
 
-    const doc = parser.parseFromString(
-        html,
-        'text/html'
-    );
+        sanitizeDocument(doc);
 
-    // =========================================
-    // 📌 FUNÇÃO PARA LIMPAR TEXTO
-    // =========================================
-    function cleanText(text) {
+        return doc;
+    }
 
+    function sanitizeDocument(doc) {
+        doc.querySelectorAll('script,style,iframe,object,embed,meta,link')
+            .forEach(node => node.remove());
+
+        doc.querySelectorAll('*').forEach(node => {
+            const attrsToRemove = [];
+
+            Array.from(node.attributes).forEach(attr => {
+                const attrName = attr.name.toLowerCase();
+                if (attrName.startsWith('on')) {
+                    attrsToRemove.push(attr.name);
+                }
+            });
+
+            attrsToRemove.forEach(attrName => node.removeAttribute(attrName));
+        });
+    }
+
+    function normalizeWhitespace(text) {
+        return text
+            .replace(/\u00a0/g, ' ')
+            .replace(/[ \t]+/g, ' ');
+    }
+
+    function removeLeadingIcons(text) {
+        return text.replace(/^\s*[>»]?\s*[✔✅☑]\s*/g, '');
+    }
+
+    function cleanInlineText(text) {
         if (!text) {
             return '';
         }
 
         return text
             .replace(/&nbsp;/g, ' ')
-            .replace(/\s+/g, ' ')
-            .trim();
+            .replace(/\r/g, '')
+            .replace(/\n/g, ' ')
+            .replace(/\t/g, ' ')
+            .replace(/[✔✅☑]/g, '')
+            .replace(/\s+/g, ' ');
     }
 
-    // =========================================
-    // 📌 PROCESSA ESTILOS INLINE
-    // =========================================
-    function processInlineStyles(element) {
-
-        const styles = ['bodyText'];
-
-        // =====================================
-        // BOLD
-        // =====================================
-        if (
-            element.querySelector('strong') ||
-            element.querySelector('b')
-        ) {
-
-            styles.push('bold');
-        }
-
-        // =====================================
-        // ITALIC
-        // =====================================
-        if (
-            element.querySelector('em') ||
-            element.querySelector('i')
-        ) {
-
-            styles.push('italic');
-        }
-
-        // =====================================
-        // UNDERLINE
-        // =====================================
-        if (
-            element.querySelector('u')
-        ) {
-
-            styles.push('underline');
-        }
-
-        // =====================================
-        // LINE THROUGH
-        // =====================================
-        if (
-            element.querySelector('s') ||
-            element.querySelector('strike')
-        ) {
-
-            styles.push('lineThrough');
-        }
-
-        return styles;
+    function dedupeStyles(styles) {
+        return Array.from(new Set(styles));
     }
 
-    // =========================================
-    // 📌 PROCESSA ELEMENTOS
-    // =========================================
-    function processElement(element) {
+    function buildPdfmakeNode(baseStyles, run) {
+        const styles = dedupeStyles([...(baseStyles || []), ...(run.styles || [])]);
+        const node = {
+            text: run.text,
+            style: styles
+        };
 
-        // =====================================
-        // TAG HTML
-        // =====================================
-        const tagName =
-            element.tagName.toLowerCase();
-
-        // =====================================
-        // TEXTO LIMPO
-        // =====================================
-        const text =
-            cleanText(element.textContent);
-
-        // =====================================
-        // IGNORA VAZIO
-        // =====================================
-        if (!text) {
-            return;
+        if (run.link) {
+            node.link = run.link;
         }
 
-        // =====================================
-        // H1
-        // =====================================
-        if (tagName === 'h1') {
+        return node;
+    }
 
-            internalBody.push([{
-                text,
-                style: ['heading1']
-            }]);
-
-            return;
+    function parseInline(node, activeStyles = [], activeLink = null) {
+        if (!node) {
+            return [];
         }
 
-        // =====================================
-        // H2
-        // =====================================
-        if (tagName === 'h2') {
-
-            internalBody.push([{
-                text,
-                style: ['heading2']
-            }]);
-
-            return;
-        }
-
-        // =====================================
-        // H3
-        // =====================================
-        if (tagName === 'h3') {
-
-            internalBody.push([{
-                text,
-                style: ['heading3']
-            }]);
-
-            return;
-        }
-
-        // =====================================
-        // H4
-        // =====================================
-        if (tagName === 'h4') {
-
-            internalBody.push([{
-                text,
-                style: ['heading4']
-            }]);
-
-            return;
-        }
-
-        // =====================================
-        // H5
-        // =====================================
-        if (tagName === 'h5') {
-
-            internalBody.push([{
-                text,
-                style: ['heading5']
-            }]);
-
-            return;
-        }
-
-        // =====================================
-        // H6
-        // =====================================
-        if (tagName === 'h6') {
-
-            internalBody.push([{
-                text,
-                style: ['heading6']
-            }]);
-
-            return;
-        }
-
-        // =====================================
-        // UL
-        // =====================================
-        if (tagName === 'ul') {
-
-            const items = [];
-
-            element
-                .querySelectorAll('li')
-                .forEach(li => {
-
-                    const itemText =
-                        cleanText(li.textContent);
-
-                    if (itemText) {
-
-                        items.push(itemText);
-                    }
-
-                });
-
-            if (items.length > 0) {
-
-                internalBody.push([{
-                    ul: items,
-                    style: ['unorderedList'],
-                    markerColor: '#000000'
-                }]);
+        if (node.nodeType === Node.TEXT_NODE) {
+            const text = cleanInlineText(node.nodeValue);
+            if (!text || text.trim().length === 0) {
+                return [];
             }
 
-            return;
-        }
-
-        // =====================================
-        // OL
-        // =====================================
-        if (tagName === 'ol') {
-
-            const items = [];
-
-            element
-                .querySelectorAll('li')
-                .forEach(li => {
-
-                    const itemText =
-                        cleanText(li.textContent);
-
-                    if (itemText) {
-
-                        items.push(itemText);
-                    }
-
-                });
-
-            if (items.length > 0) {
-
-                internalBody.push([{
-                    ol: items,
-                    style: ['orderedList'],
-                    markerColor: '#000000'
-                }]);
-            }
-
-            return;
-        }
-
-        // =====================================
-        // PARÁGRAFOS / DIV
-        // =====================================
-        if (
-            tagName === 'p' ||
-            tagName === 'div'
-        ) {
-
-            const styles =
-                processInlineStyles(element);
-
-            internalBody.push([{
+            return [{
                 text,
-                style: styles
-            }]);
-
-            return;
+                styles: activeStyles,
+                link: activeLink
+            }];
         }
 
-    }
+        if (node.nodeType !== Node.ELEMENT_NODE) {
+            return [];
+        }
 
-    // =========================================
-    // 📌 PERCORRE ELEMENTOS
-    // =========================================
-    Array.from(doc.body.children)
-        .forEach(element => {
+        const tagName = node.tagName.toLowerCase();
+        if (tagName === 'br') {
+            return [{
+                text: '\n',
+                styles: activeStyles,
+                link: activeLink
+            }];
+        }
 
-            processElement(element);
+        const nextStyles = [...activeStyles];
+        let nextLink = activeLink;
 
+        if (tagName === 'strong' || tagName === 'b') {
+            nextStyles.push('bold');
+        } else if (tagName === 'em' || tagName === 'i') {
+            nextStyles.push('italic');
+        } else if (tagName === 'u') {
+            nextStyles.push('underline');
+        } else if (tagName === 's' || tagName === 'strike') {
+            nextStyles.push('lineThrough');
+        } else if (tagName === 'a' && node.getAttribute('href')) {
+            nextLink = node.getAttribute('href');
+        }
+
+        const runs = [];
+        node.childNodes.forEach(childNode => {
+            runs.push(...parseInline(childNode, nextStyles, nextLink));
         });
 
-    // =========================================
-    // 📦 RETORNO FINAL
-    // =========================================
+        return runs;
+    }
 
-    return internalBody;
+    function parseRunsFromElement(element) {
+        const runs = [];
+        element.childNodes.forEach(childNode => {
+            runs.push(...parseInline(childNode, [], null));
+        });
+        return runs;
+    }
+
+    function collapseRuns(runs) {
+        const collapsed = [];
+
+        runs.forEach(run => {
+            if (!run || !run.text) {
+                return;
+            }
+
+            const cleanTextValue = normalizeWhitespace(run.text);
+            if (!cleanTextValue || cleanTextValue.trim().length === 0) {
+                return;
+            }
+
+            const normalizedRun = {
+                ...run,
+                text: cleanTextValue
+            };
+
+            const prev = collapsed[collapsed.length - 1];
+            const prevStyles = JSON.stringify(prev?.styles || []);
+            const currentStyles = JSON.stringify(normalizedRun.styles || []);
+            const sameLink = (prev?.link || null) === (normalizedRun.link || null);
+
+            if (prev && prevStyles === currentStyles && sameLink && prev.text !== '\n' && normalizedRun.text !== '\n') {
+                prev.text += normalizedRun.text;
+            } else {
+                collapsed.push(normalizedRun);
+            }
+        });
+
+        if (collapsed.length > 0) {
+            collapsed[0].text = removeLeadingIcons(collapsed[0].text);
+        }
+
+        return collapsed.filter(run => run.text && run.text.trim().length > 0);
+    }
+
+    function createTextBlockFromRuns(runs, baseStyles) {
+        const collapsedRuns = collapseRuns(runs);
+        if (collapsedRuns.length === 0) {
+            return null;
+        }
+
+        const text = collapsedRuns.map(run => buildPdfmakeNode(baseStyles, run));
+        return { text };
+    }
+
+    function parseListItem(liNode, listStyleName) {
+        const itemNodes = [];
+        const listChildren = [];
+        const itemRuns = [];
+
+        liNode.childNodes.forEach(child => {
+            if (
+                child.nodeType === Node.ELEMENT_NODE &&
+                (child.tagName.toLowerCase() === 'ul' || child.tagName.toLowerCase() === 'ol')
+            ) {
+                listChildren.push(child);
+            } else {
+                itemNodes.push(child);
+            }
+        });
+
+        itemNodes.forEach(node => {
+            itemRuns.push(...parseInline(node, [], null));
+        });
+
+        const textBlock = createTextBlockFromRuns(itemRuns, [listStyleName]);
+        const nestedLists = listChildren
+            .map(childList => parseList(childList))
+            .filter(Boolean);
+
+        if (textBlock && nestedLists.length === 0) {
+            return textBlock;
+        }
+
+        if (!textBlock && nestedLists.length === 1) {
+            return nestedLists[0];
+        }
+
+        if (!textBlock && nestedLists.length > 1) {
+            return {
+                stack: nestedLists,
+                style: [listStyleName]
+            };
+        }
+
+        if (textBlock && nestedLists.length > 0) {
+            return {
+                stack: [
+                    textBlock,
+                    ...nestedLists
+                ],
+                style: [listStyleName]
+            };
+        }
+
+        return {
+            text: '',
+            style: [listStyleName]
+        };
+    }
+
+    function parseList(listElement) {
+        const tagName = listElement.tagName.toLowerCase();
+        const listType = tagName === 'ol' ? 'ol' : 'ul';
+        const listStyleName = listType === 'ol' ? 'orderedList' : 'unorderedList';
+        const items = [];
+
+        Array.from(listElement.children).forEach(child => {
+            if (child.tagName.toLowerCase() !== 'li') {
+                return;
+            }
+
+            const parsedItem = parseListItem(child, listStyleName);
+            if (parsedItem) {
+                items.push(parsedItem);
+            }
+        });
+
+        if (items.length === 0) {
+            return null;
+        }
+
+        return {
+            [listType]: items,
+            style: [listStyleName],
+            markerColor: '#000000'
+        };
+    }
+
+    function parseBlock(node, inheritedStyles = []) {
+        if (!node || node.nodeType !== Node.ELEMENT_NODE) {
+            return;
+        }
+
+        const tagName = node.tagName.toLowerCase();
+        const headingMap = {
+            h1: 'heading1',
+            h2: 'heading2',
+            h3: 'heading3',
+            h4: 'heading4',
+            h5: 'heading5',
+            h6: 'heading6'
+        };
+
+        if (headingMap[tagName]) {
+            const runs = parseRunsFromElement(node);
+            const textBlock = createTextBlockFromRuns(runs, [headingMap[tagName]]);
+            if (textBlock) {
+                output.push([textBlock]);
+            }
+            return;
+        }
+
+        if (tagName === 'ul' || tagName === 'ol') {
+            const listNode = parseList(node);
+            if (listNode) {
+                output.push([listNode]);
+            }
+            return;
+        }
+
+        if (tagName === 'blockquote') {
+            const runs = parseRunsFromElement(node);
+            const blockquoteStyles = [...inheritedStyles, 'bodyText', 'italic'];
+            const textBlock = createTextBlockFromRuns(runs, blockquoteStyles);
+            if (textBlock) {
+                output.push([textBlock]);
+            }
+            return;
+        }
+
+        if (tagName === 'p' || tagName === 'div' || tagName === 'li') {
+            const runs = parseRunsFromElement(node);
+            const textBlock = createTextBlockFromRuns(runs, [...inheritedStyles, 'bodyText']);
+            if (textBlock) {
+                output.push([textBlock]);
+            }
+
+            Array.from(node.children).forEach(child => {
+                const childTag = child.tagName.toLowerCase();
+                if (childTag === 'ul' || childTag === 'ol') {
+                    parseBlock(child, inheritedStyles);
+                }
+            });
+            return;
+        }
+
+        const directBlockChildren = Array.from(node.children).filter(child => {
+            const childTag = child.tagName.toLowerCase();
+            return ['p', 'div', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'blockquote', 'li'].includes(childTag);
+        });
+
+        if (directBlockChildren.length > 0) {
+            directBlockChildren.forEach(child => parseBlock(child, inheritedStyles));
+            return;
+        }
+
+        const fallbackRuns = parseRunsFromElement(node);
+        const fallbackBlock = createTextBlockFromRuns(fallbackRuns, [...inheritedStyles, 'bodyText']);
+        if (fallbackBlock) {
+            output.push([fallbackBlock]);
+        }
+    }
+
+    const doc = parseHtml(data);
+    parseBlock(doc.body);
+
+    return output;
 }
