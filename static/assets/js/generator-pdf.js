@@ -160,6 +160,7 @@ export function generateFilePdf(dataJson) {
                 color: '#000000'
             },
             'heading1': {
+                leadingIndent: 20,
                 fontSize: 24,
                 lineHeight:1.2,
                 bold: true,
@@ -168,6 +169,7 @@ export function generateFilePdf(dataJson) {
                 margin:[0,0,0,0]
             },
             'heading2': {
+                leadingIndent: 20,
                 fontSize: 18,
                 lineHeight:1.2,
                 bold: true,
@@ -176,6 +178,7 @@ export function generateFilePdf(dataJson) {
                 margin:[0,0,0,0]
             },
             'heading3': {
+                leadingIndent: 20,
                 fontSize: 14,
                 lineHeight:1.2,
                 bold: true,
@@ -184,6 +187,7 @@ export function generateFilePdf(dataJson) {
                 margin:[0,0,0,0]
             },
             'heading4': {
+                leadingIndent: 20,
                 fontSize: 12,
                 lineHeight:1.2,
                 bold: true,
@@ -192,6 +196,7 @@ export function generateFilePdf(dataJson) {
                 margin:[0,0,0,0]
             },
             'heading5': {
+                leadingIndent: 20,
                 fontSize: 10,
                 lineHeight:1.2,
                 bold: true,
@@ -200,6 +205,7 @@ export function generateFilePdf(dataJson) {
                 margin:[0,0,0,0]
             },
             'heading6': {
+                leadingIndent: 20,
                 fontSize: 9,
                 lineHeight:1.2,
                 bold: true,
