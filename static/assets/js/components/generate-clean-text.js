@@ -1,7 +1,5 @@
 export function generateCleanText(data, internalBody) {
 
-    console.log('[GENERATE-CLEAN-TEXT.JS] INÍCIO DA FUNÇÃO');
-
     // =========================================
     // 🔒 VALIDAÇÃO
     // =========================================
@@ -27,20 +25,6 @@ export function generateCleanText(data, internalBody) {
         html,
         'text/html'
     );
-
-    // =========================================
-    // 📌 ARRAY FINAL
-    // =========================================
-    //
-    // ARRAY<OBJECT>
-    //
-    // [
-    //   {...},
-    //   {...},
-    //   {...}
-    // ]
-    //
-    // =========================================
 
     // =========================================
     // 📌 FUNÇÃO PARA LIMPAR TEXTO
@@ -312,14 +296,6 @@ export function generateCleanText(data, internalBody) {
     // =========================================
     // 📦 RETORNO FINAL
     // =========================================
-    console.log(
-        '[GENERATE-CLEAN-TEXT.JS] FIM DA FUNÇÃO dados internalBody = ',
-        JSON.stringify(internalBody, null, 2)
-    );
-
-    console.log(
-        '[GENERATE-CLEAN-TEXT.JS] FIM DA FUNÇÃO'
-    );
 
     return internalBody;
 }
